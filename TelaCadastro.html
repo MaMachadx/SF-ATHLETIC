@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>SF Athletic - Login</title>
+  <link href="CAD.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+    <div class="main-cad">
+
+        <div class="left-cad">
+            <img src="imagens/6.png " class="left-login-image">
+            <h1><a href="TelaInicio.html">Voltar ao login</a></h1>
+        </div>
+
+        <div class="right-cad">
+            <div class="card-cad">
+                <h1>CRIAR CONTA</h1>
+                <div class="box">
+                    <form action="">
+                        <div class="inputBox">
+                            <label for="nome">Nome completo</label>
+                            <input type="text" name="nome" id="nome" class="InputUser" required>
+                        </div>
+                        <div class="inputBox">
+                            <label for="email">Email</label>
+                            <input type="text" name="email" id="email" class="InputUser" required>
+                        </div>
+                        <div class="inputBox">
+                            <label for="telefone">Telefone</label>
+                            <input type="text" name="telefone" id="telefone" class="InputUser" required>
+                        </div>
+                        <div class="inputBox">
+                            <label for="data_nascimento">Data de nascimento</label>
+                            <input type="date" name="data_nascimento" id="data_nascimento" class="InputUser" required>
+                        </div>
+                        
+                        <p>Sexo:</p>
+                        <input type="radio" id="feminino" name="genero" value="feminino" required>
+                        <label for="feminino">Feminino</label>
+                        <input type="radio" id="masculino" name="genero" value="masculino" required>
+                        <label for="masculino">Masculino</label>
+                        <input type="radio" id="outro" name="genero" value="outro" required>
+                        <label for="outro">Outro</label>
+
+                        <div class="inputBox">
+                            <label for="cidade">Cidade</label>
+                            <input type="text" name="cidade" id="cidade" class="InputUser" required>
+                        </div>
+                        <div class="inputBox">
+                            <label for="estado">Estado</label>
+                            <input type="text" name="estado" id="estado" class="InputUser" required>
+                        </div>
+                        <input type="submit" name="submit" id="submit" class="btn-cadastrar">
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+<!--
+  <div id="sf">
+    <img src="1.png">
+    <p id="s">SF ATHLETIC</p>
+  </div>
+-->
+  
+</body>
+
+</html>
