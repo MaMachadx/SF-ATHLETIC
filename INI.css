@@ -7,7 +7,7 @@
 body{
     margin: 0;
     font-family:'Poppins', sans-serif;
-    background-color: white /*#5CE1E6*/ /*#8C52FF*/;
+    background-color: rgb(49, 49, 49) /*#5CE1E6*/ /*#8C52FF*/;
 }
 
 body * {
@@ -187,7 +187,7 @@ background: #8C52FF;
 }
 
 .c1 > h1{
-    color: #5500ff;
+    color: #ffffff;
     font-size: 3vw;
 }
 
@@ -199,7 +199,7 @@ background: #8C52FF;
 }
 
 .btn-cad{
-    margin-left: 30vw;
+    margin-left: 28vw;
     width: 40vw;
     padding: 16px 0px;
     border: none;
@@ -226,29 +226,37 @@ background: #8C52FF;
 
 /*////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 
-.cred{
+.cx{
     width: 98.9vw;
     height: 50vh;
+    padding-left: 14vw;
+    padding-right: 14vw;
     background-color: #000000;
-    /*background-image: linear-gradient(to bottom, #252525, #131313);*/
     display: flex;
     align-items: center;
     justify-content: center;
     box-shadow: 0px 0px 80px rgb(0, 0, 0);
 }
 
-.cred > img{
-    height: 40%;
+.cx > hr{
+    width: 2px;
+    height: 50%;
+    background-color: rgb(255, 255, 255);
 }
 
-.cred > h1{
-    font-size: 3vh;
-    color: white;
+.cx > img{
+    margin: 0;
+    height: 50%;
 }
 
-.cred > h2{
-    font-size: 1.5vh;
-    color: white
+.cx > h1{
+    font-size: 2.5vh;
+    color: rgb(185, 185, 185);
+}
+
+.cx > h2{
+    font-size: 2.5vh;
+    color: rgb(185, 185, 185);
 }
 
 /*-----------------TELA REDUZIDA-------------------*/
@@ -283,42 +291,6 @@ background: #8C52FF;
     .card-login{
         width: 70%
     }
-    /*------------------------------------------------*/
-    .ctd{
-        display: none;
-    }
-
-    .left{
-        display: none;
-    }
-
-    .right{
-        display: none;
-    }
-
-    /*---------------------------------------------------------*/
-
-    .ctd2{
-        width: 100vw;
-        height: 50vh;
-        margin-top: 20vh;
-        text-align: center;
-        display: block;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-    }
-
-    .ctd2 > h1{
-        font-weight: 2000;
-        font-size: 7vw;
-        color: #8C52FF;
-    }
-
-    .ctd2 > img{
-        width: 85vw;
-        margin-bottom: 20vh;
-    }
 }
 
 @media only screen and (max-width: 600px){
@@ -349,43 +321,6 @@ background: #8C52FF;
 
     .card-login{
         width: 90%;
-    }
-
-/*------------------------------------------------*/
-    .ctd{
-        display: none;
-    }
-
-    .left{
-        display: none;
-    }
-
-    .right{
-        display: none;
-    }
-
-    /*---------------------------------------------------------*/
-
-    .ctd2{
-        width: 109vw;
-        height: 50vh;
-        margin-top: 20vh;
-        text-align: center;
-        display: block;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-    }
-
-    .ctd2 > h1{
-        font-weight: 2000;
-        font-size: 7vw;
-        color: #8C52FF;
-    }
-
-    .ctd2 > img{
-        width: 85vw;
-        margin-bottom: 20vh;
     }
 
     /*---------------------------------------------------------*/
