@@ -67,7 +67,7 @@ body * {
     align-items: center;
     flex-direction: column;
     padding: 30px 35px;
-    background-color: rgb(63, 63, 63);
+    background: rgba(255, 255, 255, 0.342);
     border-radius: 20px;
     box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.527);
 }
@@ -90,16 +90,14 @@ body * {
 
 .inputBox > label{
     font-size: 2vh;
-    color: #ffffff;
-}
-
-.inputBox > p{
-    font-size: 2vh;
-    color: #ffffff;
+    font-weight: 800;
+    color: #4916af;
 }
 
 .inputBox > input{
     width: 100%;
+    margin-bottom: 3vh;
+    margin-top: 1vh;
     border: none;
     border-radius: 10px;
     padding: 15px;
@@ -109,6 +107,27 @@ body * {
     /*box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.473);*/
     outline: none;
     box-sizing: border-box;
+}
+
+.inputBox > input::placeholder{
+    color: #a082dd9a;
+    font-weight: 700;
+}
+
+.box p{
+    font-size: 2vh;
+    font-weight: 800;
+    color: #592cb3;
+}
+
+.box input{
+    margin-bottom: 3vh;
+}
+
+.box .s{
+    color: #6535c7;
+    margin-bottom: 3vh;
+    font-weight: 700;
 }
 
 /*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/

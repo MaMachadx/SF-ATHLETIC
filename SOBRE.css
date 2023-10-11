@@ -7,7 +7,7 @@
 body{
     margin: 0;
     font-family:'Poppins', sans-serif;
-    background-color: white /*#5CE1E6*/ /*#8C52FF*/;
+    background-color: rgb(49, 49, 49) /*#5CE1E6*/ /*#8C52FF*/;
 }
 
 body * {
@@ -175,82 +175,49 @@ background: #8C52FF;
 
 .ctd{
     width: 98.9vw;
-    height: 50vh;
-    display: flex;
-    align-items: center;
-}
-
-.left{
-    width: 50vw;
-    height: 100vh;
-    background-color: rgba(0, 0, 0, 0);
+    height: 70vh;
     display: flex;
     justify-content: center;
+}
+
+.bloco{
+    width: 25vw;
+    height: 80vh;
+    background-color: rgba(0, 0, 0, 0);
+    padding-top: 15vh;
+    display: flex;
     align-items: center;
     flex-direction: column;
 }
 
-.left > h1{
+.bloco > h1{
+    text-align: center;
     font-weight: 1200;
     font-size: 2vw;
     color: #5CE1E6;
     transition: .4s;
 }
 
-.left > h1:hover{
-    font-size: 3vw;
+.bloco > h1:hover{
+    font-size: 2.3vw;
 }
 
-.left > p{
-    font-weight: 1200;
-    font-size: 1.5vw;
-    color: #000000;
-
-}
-
-.left > img{
-    width: 20vw;
-    transition: .6s;
-}
-
-.left > img:hover{
-    width: 32vw;
-}
-
-.right{
-    width: 50vw;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-.right > h1{
-    font-weight: 1200;
-    font-size: 2vw;
-    color: #8C52FF;
-    transition: .4s;
-}
-
-.right > h1:hover{
-    font-size: 3vw;
-}
-
-.rigth > p{
+.bloco > p{
+    margin-bottom: 5vh;
     font-weight: 1200;
     font-size: 1vw;
-    color: #000000;
+    color: #ffffff;
 
 }
 
-.right > img{
-    width: 20vw;
+.bloco > img{
+    margin-bottom: 8vh;
+    width: 15vw;
     transition: .6s;
 }
 
-.right > img:hover{
-    width: 32vw;
+.bloco > img:hover{
+    width: 18vw;
 }
 
 /*///////////////////////////////////////////////////////////////////////////////////////////////////////////*/
@@ -280,7 +247,7 @@ background: #8C52FF;
 }
 
 .c1 > h1{
-    color: #5500ff;
+    color: #ffffff;
     font-size: 3vw;
 }
 
@@ -319,27 +286,37 @@ background: #8C52FF;
 
 /*////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 
-.cred{
+.cx{
     width: 98.9vw;
     height: 50vh;
+    padding-left: 14vw;
+    padding-right: 14vw;
     background-color: #000000;
-    /*background-image: linear-gradient(to bottom, #252525, #131313);*/
     display: flex;
     align-items: center;
     justify-content: center;
     box-shadow: 0px 0px 80px rgb(0, 0, 0);
 }
 
-.cred > img{
-    height: 70%;
+.cx > hr{
+    width: 2px;
+    height: 50%;
+    background-color: rgb(255, 255, 255);
 }
 
-.cred > h1{
-    color: white;
+.cx > img{
+    margin: 0;
+    height: 50%;
 }
 
-.cred > h2{
-    color: white
+.cx > h1{
+    font-size: 2.5vh;
+    color: rgb(185, 185, 185);
+}
+
+.cx > h2{
+    font-size: 2.5vh;
+    color: rgb(185, 185, 185);
 }
 
 /*-----------------TELA REDUZIDA-------------------*/
