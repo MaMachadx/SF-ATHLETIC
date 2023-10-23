@@ -15,7 +15,7 @@
         </div>
 
         <div class="right-login">
-            <div class="card-login">
+            <form method="post" class="card-login">
                 <h1>ENTRE EM SUA CONTA</h1>
                     <div class="textfield">
                         <label for="usuario">Nome de usuário ou email</label>
@@ -25,9 +25,9 @@
                         <label for="senha">Senha</label>
                         <input type="password" name="senha" placeholder="Senha">
                     </div>
-                    <a class="btn-login" href="TelaHome.html">Login</a>
+                    <input type="submit" class="btn-login" name="btnLogin" value="Login" >
                 <a class="cadastro" href="TelaCadastro.html">Não tenho uma conta</a>
-            </div>
+            </form>
         </div>
 
     </div>

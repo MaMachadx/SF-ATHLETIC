@@ -23,6 +23,9 @@
   <div class="container">
     <div class="MENU">
       <div class="navg">
+      <form method="post">
+          <input type="submit" class="title" value="Logout" name="btnLogout">
+      </form>
         <ul>
           <li class="lista active">
             <a href="TelaHome.html">

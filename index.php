@@ -1,5 +1,19 @@
 <?php
     session_start();
+    if(isset($_POST['btnLogout'])){
+        unset($_SESSION['user_logado']);
+    }
+    if(isset($_POST['btnLogin'])){
+        $userLogado = new stdClass();
+        $userLogado->user = $_POST["usuario"];
+        $userLogado->senha = $_POST["senha"];
+ 
+     if($userLogado->user == "admin@gmail.com"){
+         if($userLogado->senha == "123456"){
+             $_SESSION['user_logado'] = serialize($userLogado);
+         }
+     }
+    }
 ?>
 <!DOCTYPE html>
 <html lang="pt-BR">
