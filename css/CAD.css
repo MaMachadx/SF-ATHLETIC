@@ -1,0 +1,297 @@
+/*Poppins*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Righteous&display=swap');
+
+/*Prompt*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Prompt:wght@600&display=swap');
+
+body{
+    margin: 0;
+    font-family:'Poppins', sans-serif;
+    background-color: white /*#5CE1E6*/ /*#8C52FF*/;
+}
+
+body * {
+    box-sizing: border-box;
+}
+
+.main-cad{
+    width: 98.7vw;
+    height: 130vh;
+    background-color: #8C52FF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.397);
+}
+
+.left-cad{
+    width: 50vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.left-cad > h1{
+    font-family: 'Prompt', sans-serif;
+    font-size: 2vw;
+    color: white;
+    transition: .4s;
+}
+
+.left-cad > h1:hover{
+    font-size: 2.5vw;
+}
+
+.left-cad-image{
+    width: 25vw;
+    border-radius: 100px;
+}
+
+.right-cad{
+    width: 50vw;
+    height: 100vh;
+    background-color: rgba(24, 44, 88, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-cad{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 35px;
+    background: rgba(255, 255, 255, 0.342);
+    border-radius: 20px;
+    box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.527);
+}
+
+.card-cad > h1{
+    color: #ffffff;
+    font-weight: 1000;
+    margin: 0;
+    margin-bottom: 3vh;
+}
+
+.box{
+    background-color: rgba(240, 255, 255, 0);
+}
+
+.inputBox{
+    position: relative;
+    flex-direction: column;
+}
+
+.inputBox > label{
+    font-size: 2vh;
+    font-weight: 800;
+    color: #4916af;
+}
+
+.inputBox > input{
+    width: 100%;
+    margin-bottom: 3vh;
+    margin-top: 1vh;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.534);
+    color: rgb(61, 92, 158);
+    font-size: 12pt;
+    /*box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.473);*/
+    outline: none;
+    box-sizing: border-box;
+}
+
+.inputBox > input::placeholder{
+    color: #a082dd9a;
+    font-weight: 700;
+}
+
+.box p{
+    font-size: 2vh;
+    font-weight: 800;
+    color: #592cb3;
+}
+
+.box input{
+    margin-bottom: 3vh;
+}
+
+.box .s{
+    color: #6535c7;
+    margin-bottom: 3vh;
+    font-weight: 700;
+}
+
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+.btn-cadastrar{
+    width: 70%;
+    padding: 16px 0px;
+    margin-top: 10vh;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 3px;
+    background: rgb(255, 255, 255);
+    cursor: pointer;
+    box-shadow: 0px 10px 40px -12px #5CE1E6;
+    transition: .3s;
+    text-decoration-line: none;
+    color: #5500ff;
+}
+
+.btn-cadastrar:hover{
+    letter-spacing: 5px;
+}
+
+.btn-voltar:hover{
+    letter-spacing: 5px;
+}
+
+.btn-voltar{
+    width: 30vw;
+    margin-top: 10vh;
+    outline: none;
+    border-radius: 8px;
+    font-weight: 800;
+    letter-spacing: 3px;
+    background: rgb(255, 255, 255);
+    box-shadow: 0px 10px 40px -12px #5CE1E6;
+    text-decoration-line: none;
+    transition: .3s;
+}
+
+.btn-voltar > button{
+    padding: 16px 0px;
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 3px;
+    background: rgb(255, 255, 255);
+    cursor: pointer;
+    box-shadow: 0px 10px 40px -12px #5CE1E6;
+    transition: .3s;
+    text-decoration-line: none;
+    color: #5500ff;
+    border-radius: 8px;
+}
+
+.btn-voltar> button:hover{
+    letter-spacing: 5px;
+}
+
+.card-cad > a{
+    color: #5500ff;
+}
+
+
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+.cred{
+    width: 100vw;
+    height: 50vh;
+    background-color: #000000;
+    /*background-image: linear-gradient(to bottom, #252525, #131313);*/
+    display: flex;
+    align-items: center;
+    box-shadow: 0px 0px 80px rgb(0, 0, 0);
+}
+
+.cred > img{
+    height: 70%;
+}
+
+/*-----------------TELA REDUZIDA-------------------*/
+
+@media only screen and (max-width: 1200px){
+    .main-cad{
+        background-image: linear-gradient(to bottom, #8C52FF, #8C52FF, #5500ff);
+        flex-direction: column;
+        height: 215vh;
+    }
+
+    .left-cad > h1{
+        margin-bottom: 8vh;
+        font-size: 5vw;
+    }
+
+    .left-cad{
+        width: 100%;
+        height: auto;
+    }
+
+    .right-cad{
+        width: 100%;
+        height: auto;
+    }
+
+    .left-cad-image{
+        margin-top: -9vh;
+        width: 50vw;
+    }
+    .card-cad{
+        width: 70%
+    }
+    .card-cad > a{
+        color: #5500ff;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .main-cad{
+        background-image: linear-gradient(to bottom, #8C52FF, #8C52FF, #5500ff);
+        flex-direction: column;
+    }
+
+    .left-cad > h1{
+        display: none;
+    }
+
+    .left-cad{
+        width: 100%;
+        height: auto;
+    }
+
+    .right-cad{
+        width: 100%;
+        height: auto;
+    }
+
+    .left-cad-image{
+        width: 50vw;
+    }
+
+    .card-cad{
+        width: 90%;
+    }
+
+    .btn-cad{
+        margin-left: 15vw;
+        width: 70vw;
+        padding: 16px 0px;
+        border: none;
+        border-radius: 8px;
+        outline: none;
+        text-transform: uppercase;
+        font-weight: 800;
+        letter-spacing: 3px;
+        /*color: rgb(38, 80, 177);*/
+        background: #8C52FF;
+        cursor: pointer;
+        box-shadow: 0px 10px 40px -12px rgb(0, 48, 153);
+        transition: .3s;
+    }
+}
