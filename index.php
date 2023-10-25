@@ -27,7 +27,7 @@
 <body>
     <?php
        if(isset($_SESSION['user_logado'])){
-        require_once './TelaHome.php';
+        require_once './TelaHome.html';
        }
        else{
         require_once './TelaInicio.php';

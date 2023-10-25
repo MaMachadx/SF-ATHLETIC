@@ -232,11 +232,12 @@ body{
     height: 100%;
     width: 65vw;
     border-radius: 10px;
-    background-color: rgb(51, 51, 51);
+    background-color: red;
     display: inline;
   }
 
   .conteudo{
+    background-color: #8c52ff00;
     height: 100%;
     width: 100%;
   }

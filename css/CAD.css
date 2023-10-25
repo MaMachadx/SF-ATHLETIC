@@ -16,7 +16,7 @@ body * {
 
 .main-cad{
     width: 98.7vw;
-    height: 130vh;
+    height: 180vh;
     background-color: #8C52FF;
     display: flex;
     justify-content: center;
@@ -29,7 +29,7 @@ body * {
     height: 100vh;
     background-color: rgba(0, 0, 0, 0);
     display: flex;
-    justify-content: center;
+    
     align-items: center;
     flex-direction: column;
     text-align: center;
@@ -47,6 +47,7 @@ body * {
 }
 
 .left-cad-image{
+    margin-top: -30vh;
     width: 25vw;
     border-radius: 100px;
 }
