@@ -13,9 +13,9 @@
     <div class="header">
         <img src="imagens/1.png">
         <h1>sf athletic</h1>
-        <div class="mh">
+        <!--<div class="mh">
             <a href="#"><span class="icon"><ion-icon name="cog"></ion-icon></span></ion-icon></span></a>
-        </div>
+        </div>-->
     </div>
 
 <!---------------------------------------------------------------------------------------------------------->
@@ -46,11 +46,14 @@
         </li>
   
         <li class="lista">
-          <a href="TelaInicio.html">
-            <span class="icon"><ion-icon name="enter-outline"></ion-icon></span>
-            <span class="title">Logout</span>
-          </a>
-        </li>
+            <a href="TelaInicio.html">
+              <form method="post">
+                <input type="submit" class="logout" value="Logout" name="btnLogout">
+              </form>
+              <!--<span class="icon"><ion-icon name="enter-outline"></ion-icon></span>
+              <span class="title">Logout</span>-->
+            </a>
+          </li>
       </ul>
   
     </div>
@@ -73,10 +76,28 @@
     </script>
   </div>
 
+  <!------------------------------------------------------------------------------------------------------------->
+
   <div class="ctn">
-    <div class="conteudo">
-      
+    <div id="initial">
+        <div id="capa">
+            <img id="ftpf" src="imagens/user.png">
+          </div>
+
+        <h1 id="nome">Matheus Machado</h1>
+        <h2 id="ie">17 anos | Handebol</h2>
+        <div id="he">
+            <a href="#bio">biografia</a>
+            <a href="info">informações</a>
     </div>
+    </div>
+
+    
+    <div class="conteudo" id="bio">
+        <h1 id="title">um pouco sobre mim</h1>
+        <p>ksdnsknwsnsksnwinsiwnskwnsiownsiwonswinswinswinswisnwinswinswknskwnswknswinsiwnsiwonsiwnsiwnsiwnsiwnsiownsiownisnwiosnwiosiuwhduihfjdbvkjdhvindfiehdiowjkxnkslxiowhskqnsknio</p>
+    </div>
+
   </div>
 
 </div>
