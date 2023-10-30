@@ -3,13 +3,14 @@
 
 /*Prompt*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Prompt:wght@600&display=swap');
+
 html{
     scroll-behavior: smooth;
 }
 body{
     margin: 0;
     font-family:'Poppins', sans-serif;
-    background-color: rgb(49, 49, 49) /*#5CE1E6*/ /*#8C52FF*/;
+    background-color: #313131 /*#5CE1E6*/ /*#8C52FF*/;
 }
 
 body * {
@@ -17,6 +18,7 @@ body * {
 }
 
 .h{
+    display: flex;
     margin: 0;
     width: 98.9vw;
     /*padding-top: 30px;
@@ -172,7 +174,7 @@ background: #8C52FF;
 
 .ctd{
     width: 98.9vw;
-    height: 105vh;
+    height: 120vh;
     display: flex;
     justify-content: center;
 }
@@ -182,6 +184,8 @@ background: #8C52FF;
     height: 80vh;
     background-color: rgba(0, 0, 0, 0);
     padding-top: 20vh;
+    padding-left: 1vh;
+    padding-right: 1vh;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -209,15 +213,15 @@ background: #8C52FF;
 
 .bloco > img{
     margin-bottom: 8vh;
-    width: 15vw;
+    width: 18vw;
     transition: .6s;
 }
 
 .bloco > img:hover{
-    width: 18vw;
+    width: 20vw;
 }
 
-/*///////////////////////////////////////////////////////////////////////////*/
+/*
 
 .cad{
     width: 98.9vw;
@@ -259,7 +263,7 @@ background: #8C52FF;
     text-transform: uppercase;
     font-weight: 800;
     letter-spacing: 3px;
-    /*color: rgb(38, 80, 177);*/
+    color: rgb(38, 80, 177);
     background: #8C52FF;
     cursor: pointer;
     box-shadow: 0px 10px 40px -12px rgb(0, 48, 153);
@@ -275,7 +279,8 @@ background: #8C52FF;
     letter-spacing: 5px;
 }
 
-/*////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+*/
+
 
 .cx{
     width: 98.9vw;
@@ -306,13 +311,13 @@ background: #8C52FF;
 }
 
 .cx > h2{
-    font-size: 2.5vh;
+    font-size: 2vh;
     color: rgb(185, 185, 185);
 }
 
 /*-----------------TELA REDUZIDA-------------------*/
 
-@media only screen and (max-width: 1000px){
+/*@media only screen and (max-width: 1000px){
     .main-login{
         background-image: linear-gradient(to bottom, #8C52FF, #8C52FF, #5CE1E6);
         flex-direction: column;
@@ -373,9 +378,6 @@ background: #8C52FF;
     .card-login{
         width: 90%;
     }
-
-    /*---------------------------------------------------------*/
-
     .cad{
         width: 109vw;
         height: -50vh;
@@ -400,7 +402,6 @@ background: #8C52FF;
         text-transform: uppercase;
         font-weight: 800;
         letter-spacing: 3px;
-        /*color: rgb(38, 80, 177);*/
         background: #8C52FF;
         cursor: pointer;
         box-shadow: 0px 10px 40px -12px rgb(0, 48, 153);
@@ -410,4 +411,4 @@ background: #8C52FF;
     .cred{
         width: 109vw;
     }
-}
+}*/

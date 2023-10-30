@@ -1,0 +1,363 @@
+/* Ubuntu */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
+
+/*Poppins*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Righteous&display=swap');
+
+/*Prompt*/
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@300&display=swap');
+
+body{
+  background-color: #0f0f0f;
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+}
+
+.header{
+position: initial;
+background-image: linear-gradient(to right, #000000, #000000, #1f094b);
+width: 98.9vw;
+height: 4vw;
+padding-top: 1vh;
+padding-bottom: 1vh;
+padding-left: 2vw;
+align-items: center;
+display: flex;
+}
+
+.mh{
+  margin-left: 70vw;
+  display: none;
+  width: 5vw;
+  padding-left: 2vw;
+  padding-right: 2vw;
+  height: 50px;
+  background: #00000000;
+  border-radius: 8px;
+  font-size: 0;
+  box-shadow: 0 2px 3px 0 rgba(0,0,0,.1);
+  transition: .7s;
+}
+
+.mh a{
+margin-left: 20px;
+font-size: 25px;
+text-transform: uppercase;
+color: rgb(199, 199, 199);
+text-decoration: none;
+line-height: 50px;
+position: relative;
+z-index: 1;
+display: inline-block;
+text-align: center;
+transition: .3s;
+}
+
+.mh a:hover{
+  color: white;
+}
+
+.mh a .icon{
+  position: relative;
+  display: block;
+  min-width: 60px;
+  height: 60px;
+  line-height: 70px;
+  text-align: center;
+}
+
+.mh a .icon ion-icon{
+  position: relative;
+  font-size: 1.5em;
+  z-index: 1;
+}
+
+.mh > input{
+width: 100%;
+margin-bottom: 3vh;
+margin-top: 0;
+border: none;
+border-radius: 15px;
+padding: 2.5vh;
+background: #ffffff17;
+color: rgb(61, 92, 158);
+font-size: 12pt;
+/*box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.473);*/
+outline: none;
+box-sizing: border-box;
+}
+
+.mh > input::placeholder{
+color: #ffffff;
+font-weight: 700;
+}
+
+.header > img{
+  display: flex;
+  margin: 0;
+  height: 100%;
+}
+
+.header > h1{
+  font-size: 3.5vh;
+  display: flex;
+  color: #8c52ff00;
+  text-transform: uppercase;
+  transition: .6s;
+}
+
+.header:hover  > h1{
+  margin-left: 2vw;
+  color: #e6e6e6;
+}
+
+.header > h1:hover{
+  color: #ffffff;
+}
+
+.header:hover > .mh{
+  display: flex;
+}
+
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+.container{
+display: flex;
+width: 100vw;
+padding-bottom: 10vh;
+margin-bottom: 5vh;
+}
+
+.MENU{
+display: inline;
+width: 15vw;
+height: 100%;
+}
+
+.navg{
+  margin-top: 16vh;
+  margin-left: 2vw;
+  position: fixed;
+  height: 55vh;
+  width: 70px;
+  background: #000000;
+  box-shadow: 8px 0 0 #8C52FF;
+  border-left: 10px solid #000000;
+  overflow-x: hidden;
+  transition: .5s;
+  border-radius: 20px
+}
+
+.navg:hover{
+  width: 300px;
+}
+
+.navg ul{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding-left: 5px;
+  padding-top: 5vh;
+}
+
+.navg ul li{
+  position: relative;
+  list-style: none;
+  width: 100%;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.navg ul li.active{
+  background: #8C52FF;
+}
+
+.navg ul li.active a::before{
+  content: '';
+  position: absolute;
+  top: -30px;
+  right: 5.5px;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  background: #00000000;
+  box-shadow: 15px 15px 0 #8C52FF;
+}
+
+.navg ul li.active a::after{
+  content: '';
+  position: absolute;
+  bottom: -30px;
+  right: 5.5px;
+  width: 30px;
+  height: 30px;
+  background: #00000000;
+  border-radius: 50%;
+  box-shadow: 15px -15px 0 #8C52FF;
+}
+
+.navg ul li a{
+  position: relative;
+  display: block;
+  width: 100%;
+  display: flex;
+  text-decoration: none;
+  color: rgb(201, 201, 201);
+  transition: .3s;
+}
+
+.navg ul li a:hover{
+  color: rgb(255, 255, 255);
+}
+
+.navg ul li a .icon{
+  position: relative;
+  display: block;
+  min-width: 60px;
+  height: 60px;
+  line-height: 70px;
+  text-align: center;
+}
+
+.navg li a .icon ion-icon{
+  position: relative;
+  font-size: 1.5em;
+  z-index: 1;
+}
+
+.navg li a .title{
+  position: relative;
+  display: block;
+  padding-left: 10px;
+  height: 60px;
+  line-height: 60px;
+  white-space: nowrap;
+}
+
+.navg li.active a{
+  color: #ffffff;
+}
+
+.navg .logout{
+  background-color: rgb(0, 0, 0);
+  font-family: 'Poppins', sans-serif;
+  color: rgb(201, 201, 201);
+  font-size: 3vh;
+  padding-top: 1vh;
+  padding-bottom: 1vh;
+  padding-left: 3vw;
+  padding-right: 5.5vw;
+  margin-top: 4vh;
+  border: none;
+  position: relative;
+  display: none;
+  line-height: 60px;
+  white-space: nowrap;
+  text-align: center;
+  transition: .3s;
+}
+
+.navg .logout:hover{
+  color: #ffffff;
+}
+
+.navg:hover .logout{
+  display: block;
+}
+
+/*///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+.ctn{
+  margin-top: 0;
+  margin-left: -2vw;
+  height: 100%;
+  width: 75vw;
+  background-color: rgba(22, 22, 22, 0);
+  overflow: hidden;
+  display: inline;
+}
+
+#initial{
+  flex-direction: column;
+  padding: 0;
+  display: flex;
+  width: 100%;
+  height: 80vh;
+  background-image: linear-gradient(to bottom, rgb(30, 30, 30), rgb(30, 30, 30), rgba(22, 22, 22, 0));
+  align-items: center;
+  justify-content: center;
+}
+
+#nome{
+  font-family: 'Prompt', sans-serif;
+  margin-top: 15vh;
+  color: white;
+  font-weight: 800;
+}
+
+#ie{
+  color: white;
+}
+
+#he{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1f1f1f;
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+  width: 100%;
+  border-radius: 4vh;
+  color: #ffffff;
+}
+
+#he > a{
+  text-decoration-line: none;
+  text-transform: uppercase;
+  color: rgb(201, 201, 201);
+  margin: 10px;
+  transition: .3s;
+}
+
+#he > a:hover{
+  color: white;
+}
+
+#capa{
+  display: flex;
+  width: 95%;
+  height: 40vh;
+  margin-top: 0;
+  border-bottom-left-radius: 5vh;
+  border-bottom-right-radius: 5vh;
+  background-image: linear-gradient(to bottom right, #8C52FF, #8C52FF, #5CE1E6);
+  align-items: center;
+  justify-content: center;
+}
+
+#ftpf{
+  width: 16vw;
+  border: 5px solid #5CE1E6;
+  border-radius: 20vh;
+  transform: translateY(80px);
+}
+
+.conteudo{
+  margin-top: 10vh;
+  background-color: #1f1f1f;
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+  width: 100%;
+  border-radius: 4vh;
+  color: #ffffff;
+}
+
+#title{
+  text-align: center;
+  font-size: 1.5em;
+}
+
+.conteudo > p{
+  margin: 4vw;
+}
