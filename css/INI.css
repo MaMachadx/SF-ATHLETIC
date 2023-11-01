@@ -17,7 +17,21 @@ body * {
     box-sizing: border-box;
 }
 
+::-webkit-scrollbar{
+    width: 20px;
+}
+
+::-webkit-scrollbar-track{
+    background: #000000;
+}
+
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(#8C52FF, #5CE1E6);
+    border-radius: 1vw;
+}
+
 .h{
+    position: fixed;
     display: flex;
     margin: 0;
     width: 98.9vw;
