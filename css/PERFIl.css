@@ -13,6 +13,19 @@ body{
   margin: 0;
 }
 
+::-webkit-scrollbar{
+  width: 12px;
+}
+
+::-webkit-scrollbar-track{
+  background: #000000;
+}
+
+::-webkit-scrollbar-thumb{
+  background: #8f8f8f;
+  border-radius: 1vw;
+}
+
 .header{
 position: initial;
 background-image: linear-gradient(to right, #000000, #000000, #1f094b);
@@ -340,7 +353,7 @@ height: 100%;
   margin-top: 0;
   border-bottom-left-radius: 5vh;
   border-bottom-right-radius: 5vh;
-  background-image: linear-gradient(to bottom right, #8C52FF, #8C52FF, #5CE1E6);
+  background-image: linear-gradient(to bottom right, #8C52FF, #5CE1E6);
   align-items: center;
   justify-content: center;
 }
@@ -358,7 +371,7 @@ height: 100%;
   padding-top: 2vh;
   padding-bottom: 2vh;
   width: 100%;
-  border-radius: 4vh;
+  border-radius: 3vh;
   color: #ffffff;
   display: flex;
   align-items: center;
@@ -374,4 +387,15 @@ height: 100%;
   text-align: center;
   width: 80%;
   height: 80%;
+}
+
+.ftBox{
+  width: 30vw;
+  height: 30vh;
+  background-color: #8C52FF;
+  border-radius: 2vw;
+  margin-left: 3vw;
+  margin-right: 3vw;
+  display: flex;
+  flex-direction: column;
 }

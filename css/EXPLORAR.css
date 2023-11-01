@@ -276,17 +276,27 @@ body{
   }
 
   .conteudo{
-    background-color: rgba(255, 255, 255, 0.041);
+    background-color: #1f1f1f00;
     border-radius: 5vh;
     height: 100%;
     width: 100%;
   }
 
-  #msg{
-    color:#ffffff;
+  .ctn h2{
+    color: #888888;
+    font-size: 1.5vw;
   }
 
   .bx{
-    padding: 5vh;
     width: 100%;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    margin-top: 2vh;
+    margin-bottom: 10vh;
+    background-color: #1f1f1f;
+    border-radius: 3vh;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
