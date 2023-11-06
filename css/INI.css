@@ -18,7 +18,7 @@ body * {
 }
 
 ::-webkit-scrollbar{
-    width: 20px;
+    width: 15px;
 }
 
 ::-webkit-scrollbar-track{
@@ -26,12 +26,12 @@ body * {
 }
 
 ::-webkit-scrollbar-thumb{
-    background: linear-gradient(#8C52FF, #5CE1E6);
+    background: linear-gradient(#8C52FF, #8C52FF, #5CE1E6);
     border-radius: 1vw;
 }
 
 .h{
-    position: fixed;
+    z-index: 1;
     display: flex;
     margin: 0;
     width: 98.9vw;
@@ -52,7 +52,7 @@ background: #8C52FF;
   color: white;
   text-decoration: none;
   line-height: 50px;
-  z-index: 1;
+  z-index: 0;
   display: inline-block;
   text-align: center;
 }
@@ -186,6 +186,166 @@ background: #8C52FF;
 
 /*///////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 
+#popup{
+    display: none;
+    position: absolute;
+    z-index: 2;
+    background-color: #0000006c;
+    height: 245vh;
+    width: 98.7vw;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(15px);
+    /*margin-top: -10vh;*/
+}
+
+.main-cad{
+    width: 60vw;
+    height: 230vh;
+    border-radius: 12px;
+    background-image: linear-gradient(to bottom right, #000000, rgb(44, 44, 44));
+    /*background-image: linear-gradient(to bottom right, #fff2, transparent);*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.397);
+}
+
+.down-cad{
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.down-cad h2{
+    color: #8d55ff;
+}
+
+#btnFechar{
+    display: block;
+    width: 4vw;
+    height: 4vw;
+    border-radius: 10vw;
+    margin-bottom: 2vh;
+    display: flex;
+    text-decoration: none;
+    color: rgb(201, 201, 201);
+    transition: .3s;
+  }
+  
+  #btnFechar:hover{
+    background-color: #313131;
+    color: rgb(255, 255, 255);
+  }
+  
+  #btnFechar .icon{
+    position: relative;
+    display: block;
+    min-width: 60px;
+    line-height: 70px;
+    text-align: center;
+  }
+  
+  #btnFechar .icon ion-icon{
+    position: relative;
+    font-size: 1.5em;
+  }
+
+.card-cad{
+    width: 85%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 35px;
+    background: rgb(17, 17, 17);
+    border-radius: 20px;
+    box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.527);
+}
+
+.card-cad > h1{
+    font-size: 1rem;
+    color: #ffffff;
+    font-weight: 1000;
+    margin: 0;
+    margin-bottom: 3vh;
+}
+
+.box{
+    background-color: rgba(240, 255, 255, 0);
+}
+
+.inputBox{
+    position: relative;
+    flex-direction: column;
+}
+
+.inputBox > label{
+    font-size: 2vh;
+    font-weight: 800;
+    color: #5CE1E6;
+}
+
+.inputBox > input{
+    width: 100%;
+    margin-bottom: 3vh;
+    margin-top: 1vh;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    background: rgb(44, 44, 44);
+    color: #5ce1e644;
+    font-size: 12pt;
+    /*box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.473);*/
+    outline: none;
+    box-sizing: border-box;
+}
+
+.inputBox > input::placeholder{
+    color: #5ce1e644;
+    font-weight: 700;
+}
+
+.box p{
+    font-size: 2vh;
+    font-weight: 800;
+    color: #5CE1E6;
+}
+
+.box input{
+    margin-bottom: 3vh;
+}
+
+.box .s{
+    color: #b6b6b6;
+    margin-bottom: 3vh;
+    font-weight: 700;
+}
+
+#subir{
+    font-size: 15px;
+    display: block;
+    padding: 10px;
+    border-radius: 10vw;
+    margin-bottom: 2vh;
+    display: flex;
+    text-decoration: none;
+    color: rgb(201, 201, 201);
+    text-align: center;
+    transition: .3s;
+  }
+  
+  #subir:hover{
+    background-color: #313131;
+    color: rgb(255, 255, 255);
+  }
+
+/*///////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
 .ctd{
     width: 98.9vw;
     height: 120vh;
@@ -211,10 +371,6 @@ background: #8C52FF;
     font-size: 2vw;
     color: #5CE1E6;
     transition: .4s;
-}
-
-.bloco > h1:hover{
-    font-size: 2.3vw;
 }
 
 .bloco > p{

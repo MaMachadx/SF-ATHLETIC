@@ -11,12 +11,107 @@
 
 <body>
 
-        <div class="h">
+    <div id="popup">
+
+        <div class="main-cad">
+
+            <!--<div class="left-cad">
+                <a id="btnFechar" href="javascript:;" onclick="fechar('popup')">
+                    <span class="icon"><ion-icon name="close"></ion-icon></span>
+                </a>
+            </div>-->
+
+            <div class="down-cad">
+                <a id="btnFechar" href="javascript:;" onclick="fechar('popup')">
+                    <span class="icon"><ion-icon name="close"></ion-icon></span>
+                </a>
+                <h2 id="topo">CRIAR UMA CONTA</h2>
+                <div class="card-cad">
+                    <h1>Preencha os campos e crie sua conta!</h1>
+                    <div class="box">
+                        <form action="">
+                            <div class="inputBox">
+                                <label for="nome">Nome completo</label>
+                                <input type="text" name="nome" id="nome" class="InputUser" placeholder="Nome completo" required>
+                            </div>
+                            <div class="inputBox">
+                                <label for="email">Email</label>
+                                <input type="text" name="email" id="email" class="InputUser" placeholder="Email" required>
+                            </div>
+                            <div class="inputBox">
+                                <label for="telefone">Telefone</label>
+                                <input type="text" name="telefone" id="telefone" class="InputUser" placeholder="Telefone" required>
+                            </div>
+                            <div class="inputBox">
+                                <label for="data_nascimento">Data de nascimento</label>
+                                <input type="date" name="data_nascimento" id="data_nascimento" class="InputUser" required>
+                            </div>
+    
+                            <p>Sexo:</p>
+                            <input type="radio" id="feminino" name="genero" value="feminino" required>
+                            <label for="feminino" class="s">Feminino</label>
+                            <input type="radio" id="masculino" name="genero" value="masculino" required>
+                            <label for="masculino" class="s">Masculino</label>
+                            <input type="radio" id="outro" name="genero" value="outro" required>
+                            <label for="outro"  class="s">Outro</label>
+    
+                            <p>Tipo de conta:</p>
+                            <input type="radio" id="atleta" name="tipo" value="atleta" required>
+                            <label for="atleta" class="s">Atleta</label>
+                            <input type="radio" id="olheiro" name="tipo" value="olheiro" required>
+                            <label for="olheiro" class="s">Olheiro</label>
+    
+                            <div class="inputBox">
+                                <label for="cidade">Cidade</label>
+                                <input type="text" name="cidade" id="cidade" class="InputUser" placeholder="Cidade" required>
+                            </div>
+                            <div class="inputBox">
+                                <label for="estado">Estado</label>
+                                <input type="text" name="estado" id="estado" class="InputUser" placeholder="Estado" required>
+                            </div>
+                            <div class="inputBox">
+                                <label for="esporte">Esporte</label>
+                                <input type="text" name="esporte" id="esporte" class="InputUser" placeholder="Esporte" required>
+                            </div>
+                            <div class="inputBox">
+                                <label for="esporte">Nome da sua equipe/time</label>
+                                <input type="text" name="esporte" id="esporte" class="InputUser" placeholder="Esporte" required>
+                            </div>
+                            
+                            <center><input type="submit" name="submit" id="submit" class="btn-cadastrar" href="TelaHome.html"></center>
+                            
+                        </form>
+                    </div>
+                    <a id="subir" href="#popup">CONFERIR</a>
+                </div>
+
+            </div>
+    
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        function abrir(id){
+            document.getElementById('popup').style.display = "flex";
+            document.getElementById('main-login').style.position = "fixed";
+            document.getElementById('h').style.position = "fixed";
+        }
+
+        function fechar(id){
+            document.getElementById(id).style.display = "none";
+            document.getElementById('main-login').style.position = "initial";
+            document.getElementById('h').style.position = "initial";
+        }
+    </script>
+
+<!-------------------------------------------------------------------------------------------------------------->
+
+        <div class="h" id="h">
                 <a href="#sobre">sobre</a>
-                <a href="TelaCadastro.html">criar conta</a>
+                <a href="javascript:;" onclick="abrir('popup', 'main-login')">criar conta</a>
         </div>
 
-    <div class="main-login">
+    <div class="main-login" id="main-login">
 
         <div class="left-login">
             <img src="imagens/6.png " class="left-login-image">
@@ -35,7 +130,7 @@
                         <input type="password" name="senha" placeholder="Senha">
                     </div>
                     <a class="btn-login" href="TelaHome.html">Login</a>
-                <a class="cadastro" href="TelaCadastro.html">Não tenho uma conta</a>
+                <a class="cadastro" href="javascript:;" onclick="abrir('popup', 'main-login')">Não tenho uma conta</a>
             </div>
         </div>
 
@@ -86,8 +181,10 @@
             Rafael Ferreira
         </h2>
     </div>
-    
-  
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
 </body>
 
 </html>
