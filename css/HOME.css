@@ -131,6 +131,7 @@ body{
 }
 
 .navg{
+    z-index: 10000;
     margin-top: 10vh;
     margin-left: 2vw;
     position: fixed;
@@ -276,7 +277,12 @@ body{
   }
 
   .conteudo{
-    background-color: rgba(255, 255, 255, 0.041);
+    background: linear-gradient(to bottom left, rgba(255, 255, 255, 0.15), rgba(0, 0, 0, 0));
+    box-shadow: 0 15px 35px rgb(0, 0, 0, 0.3);
+    border-top: 1px solid rgba(255, 255, 255, 0.01);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.01);
+    backdrop-filter: blur(15px);
+    overflow: hidden;
     border-radius: 5vh;
     height: 100%;
     width: 100%;
@@ -291,49 +297,21 @@ body{
     width: 100%;
   }
 
-  .menu{
-    position: relative;
-    width: 300px;
-    height: 300px;
-    background-color: #1f094b;
-    display: flex;
-    justify-self: center;
-    align-items: center;
-  }
-
-  .menu li{
-    position: absolute;
-    list-style: none;
-  }
-  
-  .toggle{
-    position: absolute;
-    /*padding: 30px;*/
-    width: 60px;
-    height: 60px;
-    background-color: white;
-    color: #000000;
-    border-radius: 50%;
-    display: flex;
-    justify-self: center;
-    align-items: center;
-    z-index: 10000;
-    font-size: 2em;
-    cursor: pointer;
-    box-shadow: 0 3px 4px rgba(0, 0, 0, 0.15);
-    transition: 0.5s;
-  }
-
-  .menu .toggle.active{
-    transform: rotate(315deg);
-    box-shadow: 0 3px 4px rgba(0, 0, 0, 0.15);
-    background: #000000;
-    color: #ffffff;
-  }
-
   /*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 
-  .container .btn{
+  #add{
+    padding: 40px;
+    color: #ffffff;
+    border-radius: 30px;
+    font-size: 3em;
+    transition: .3s;
+  }
+
+  #add:hover{
+    background: #8f8f8f;
+  }
+
+  .conteudo .btn{
     /*text-transform: uppercase;*/
     position: relative;
     width: 300px;
@@ -342,7 +320,7 @@ body{
     margin-bottom: 30px;
   }
   
-  .container .btn a{
+  .conteudo .btn #btnLed{
     font-size: 20px;
     position: absolute;
     top: 0;
@@ -367,11 +345,11 @@ body{
     backdrop-filter: blur(15px);
   }
   
-  .container .btn:hover a{
+  .conteudo .btn:hover #btnLed{
     letter-spacing: 3px;
   }
   
-  .container .btn a::before{
+  .conteudo .btn #btnLed::before{
     content: '';
     position: absolute;
     top: 0;
@@ -383,11 +361,11 @@ body{
     transition: 0.5s;
   }
   
-  .container .btn:hover a::before{
+  .conteudo .btn:hover #btnLed::before{
     transform: skewX(45deg) translateX(175px);
   }
   
-  .container .btn::before{
+  .conteudo .btn::before{
     content: '';
     position: absolute;
     left: 50%;
@@ -400,7 +378,7 @@ body{
     transition: 0.5s;
   }
   
-  .container .btn:hover::before{
+  .conteudo .btn:hover::before{
     bottom: 0;
     height: 50%;
     width: 80%;
@@ -408,7 +386,7 @@ body{
     transition-delay: 0.5s;
   }
   
-  .container .btn::after{
+  .conteudo .btn::after{
     content: '';
     position: absolute;
     left: 50%;
@@ -421,7 +399,7 @@ body{
     transition: 0.5s;
   }
   
-  .container .btn:hover::after{
+  .conteudo .btn:hover::after{
     top: 0;
     height: 50%;
     width: 80%;
@@ -429,8 +407,8 @@ body{
     transition-delay: 0.5s;
   }
   
-  .container .btn:nth-child(1)::before,
-  .container .btn:nth-child(1)::after{
+  .conteudo .btn:nth-child(1)::before,
+  .conteudo .btn:nth-child(1)::after{
     background: #1fe5ff;
     box-shadow: 0 0 5px #1fe5ff,
     0 0 15px #1fe5ff,
