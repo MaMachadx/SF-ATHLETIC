@@ -7,6 +7,11 @@
   <title>SF Athletic - Login</title>
   <link rel="icon" type="image/x-icon" href="imagens/1.png">
   <link href="css/INI.css" rel="stylesheet" type="text/css" />
+  <script>
+    // Initialize Parse
+    Parse.initialize("O2eAlOYFMepJ3Xq1EPAUdlzbLJI7a7FUGOAizd7h", "EWNAS3OnferiSjEEluoym2r0RL1As3yfmFaiJmHm"); //PASTE HERE YOUR Back4App APPLICATION ID AND YOUR JavaScript KEY
+    Parse.serverURL = "https://parseapi.back4app.com/";
+  </script>
 </head>
 
 <body>
@@ -92,8 +97,8 @@
     <script>// Create a new User
 
         async function createParseUsuários() {
-            let sexo =""
-            
+            let sexo ="" 
+
           // Creates a new Parse "Usuários" object, which is created by default in your Parse app
           let Usuários = new Parse.Usuario();
           // Set the input values to the new "Usuários" object
