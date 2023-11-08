@@ -27,17 +27,15 @@ body{
 }
 
 .header{
-  background-image: linear-gradient(to right, #000000, #000000, #1d1d1d);
-  width: 98.9vw;
-  height: 4vw;
-  padding-top: 1vh;
-  padding-bottom: 1vh;
-  padding-left: 2vw;
-  border-bottom: 1px solid #1d1d1d;
-  align-items: center;
-  display: flex;
-  position: fixed;
-  z-index: 10000;
+position: initial;
+background-image: linear-gradient(to right, #000000, #000000, #1f094b);
+width: 98.9vw;
+height: 4vw;
+padding-top: 1vh;
+padding-bottom: 1vh;
+padding-left: 2vw;
+align-items: center;
+display: flex;
 }
 
 .mh{
@@ -144,28 +142,24 @@ margin-bottom: 5vh;
 }
 
 .MENU{
-  margin-top: 10vh;
-  display: inline;
-  width: 15vw;
-  height: 100%;
-  padding-bottom: 15vh;
+display: inline;
+width: 15vw;
+height: 100%;
 }
 
 .navg{
-    z-index: 100;
-    position: fixed;
-    height: 100%;
-    width: 70px;
-    background: #000000;
-    /*box-shadow: 8px 0 0 #8C52FF;*/
-    box-shadow: 0 0 20px #8C52FF,
-    0 0 15px #8C52FF,
-    0 0 30px #8C52FF,
-    0 0 60px #8C52FF;
-    border-left: 10px solid #000000;
-    overflow-x: hidden;
-    transition: .5s;
-  }
+  margin-top: 16vh;
+  margin-left: 2vw;
+  position: fixed;
+  height: 55vh;
+  width: 70px;
+  background: #000000;
+  box-shadow: 8px 0 0 #8C52FF;
+  border-left: 10px solid #000000;
+  overflow-x: hidden;
+  transition: .5s;
+  border-radius: 20px
+}
 
 .navg:hover{
   width: 300px;
@@ -288,7 +282,7 @@ margin-bottom: 5vh;
 /*///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 
 .ctn{
-  margin-top: 10vh;
+  margin-top: 0;
   margin-left: -2vw;
   height: 100%;
   width: 75vw;
@@ -373,12 +367,6 @@ margin-bottom: 5vh;
 
 /*.cx .card .content*/
 
-
-.bx{
-  padding: 5vh;
-  width: 100%;
-}
-
 .cx{
   position: relative;
   display: flex;
@@ -422,7 +410,6 @@ margin-bottom: 5vh;
 }
 
 .cx .card .content h1{
-  text-transform: uppercase;
   font-size: 1.8em;
   color: rgb(255, 255, 255);
   z-index: 1;

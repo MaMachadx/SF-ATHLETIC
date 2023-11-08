@@ -27,16 +27,20 @@ body{
   border-radius: 1vw;
 }
 
+/*//////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
 .header{
-  background-image: linear-gradient(to right, #000000, #000000, #1f094b);
+  background-image: linear-gradient(to right, #000000, #000000, #1d1d1d);
   width: 98.9vw;
   height: 4vw;
   padding-top: 1vh;
   padding-bottom: 1vh;
   padding-left: 2vw;
+  border-bottom: 1px solid #1d1d1d;
   align-items: center;
   display: flex;
   position: fixed;
+  z-index: 10000;
 }
 
 .mh{
@@ -64,27 +68,6 @@ body{
   z-index: 1;
   display: inline-block;
   text-align: center;
-}
-
-.mh > input{
-  width: 100%;
-  margin-bottom: 3vh;
-  margin-top: 0.2vh;
-  border: none;
-  border-radius: 15px;
-  padding: 2.5vh;
-  background: #ffffff17;
-  color: rgb(61, 92, 158);
-  font-size: 12pt;
-  /*box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.473);*/
-  outline: none;
-  box-sizing: border-box;
-}
-
-.mh > input::placeholder{
-  color: #ffffffa4;
-  font-size: 1vw;
-  font-weight: 400;
 }
 
 .header > img{
@@ -120,7 +103,7 @@ body{
   display: flex;
   width: 98.9vw;
   height: 94vh;
-  margin-bottom: 15vh;
+  padding-bottom: 15vh;
 }
 
 .MENU{
@@ -128,21 +111,23 @@ body{
   display: inline;
   width: 15vw;
   height: 100%;
+  padding-bottom: 15vh;
 }
 
 .navg{
-    z-index: 10000;
-    margin-top: 10vh;
-    margin-left: 2vw;
+    z-index: 100;
     position: fixed;
-    height: 55vh;
+    height: 100%;
     width: 70px;
     background: #000000;
-    box-shadow: 8px 0 0 #8C52FF;
+    /*box-shadow: 8px 0 0 #8C52FF;*/
+    box-shadow: 0 0 20px #8C52FF,
+    0 0 15px #8C52FF,
+    0 0 30px #8C52FF,
+    0 0 60px #8C52FF;
     border-left: 10px solid #000000;
     overflow-x: hidden;
     transition: .5s;
-    border-radius: 20px
   }
   
   .navg:hover{
@@ -268,12 +253,22 @@ body{
   /*///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 
   .ctn{
-    padding-top: 15vh;
+    z-index: 1;
+    padding-top: 12vh;
+    padding-bottom: 15vh;
     margin-left: -2vw;
     height: 100%;
-    width: 75vw;
+    width: 78vw;
     border-radius: 10px;
     display: inline;
+  }
+
+  .ctn hr{
+    width: 70vw;
+    height: 2px;
+    background: #2b2b2b;
+    border: none;
+    margin-bottom: 6vh;
   }
 
   .conteudo{
@@ -293,34 +288,229 @@ body{
   }
 
   .bx{
-    padding: 5vh;
+    padding: 3vh;
     width: 100%;
   }
 
-  /*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+  /*******************************************/
 
-  #add{
+  #banner{
+    overflow: hidden;
+    height: 30vh;
+    background: linear-gradient(to right, #00B6BD, #00B6BD, #5CE1E6);
+    border-radius: 15px;
+    margin-bottom: 6vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #banner img{
+    margin: 0;
+    height: 30vh;
+    transition: .5s;
+  }
+
+  #banner:hover img{
+    height: 35vh;
+  }
+
+  #banner h1{
+    margin-left: -10vw;
+    font-size: 2em;
+    color: white;
+    transition: .5s;
+  }
+
+  #banner:hover h1{
+    font-size: 2.1em;
+  }
+
+  #pesquisar{
+    width: 32vw;
+    margin-top: 2vh;
+    border: 2px solid #474747;
+    border-radius: 8px;
+    padding: 2.5vh;
+    background: #0f0f0f;
+    color: rgb(255, 255, 255);
+    font-size: 12pt;
+    /*box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.473);*/
+    outline: none;
+    box-sizing: border-box;
+    transition: .5s;
+  }
+  
+  #pesquisar::placeholder{
+    color: #ffffffa4;
+    font-size: 1vw;
+    font-weight: 400;
+  }
+
+  #pesquisar:hover{
+    border-radius: 15px;
+    padding: 2.5vh;
+    background: #1f1f1f;
+  }
+  
+  #pesquisar::placeholder{
+    color: #ffffffa4;
+    font-size: 1vw;
+    font-weight: 400;
+  }
+
+/********************************/
+
+#adicionar{
+  overflow: hidden;
+  height: 70vh;
+  background: linear-gradient(to top right, #5500ff, #5500ff, #8C52FF);
+  border-radius: 15px;
+  margin-bottom: 6vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#adicionar h1{
+  margin-left: 3vw;
+    font-size: 2em;
+    color: #c6a9ff;
+    transition: .5s;
+}
+
+#adicionar:hover h1{
+  color: white;
+  font-size: 2.2em;
+}
+
+#adicionar:hover #add{
+  color: white;
+}
+
+#adicionar h2{
+    margin-left: 3vw;
+    font-size: 1em;
+    color: white;
+    transition: .5s;
+}
+
+  /*******************************/
+
+  #btnAdd{
+    margin: 50px;
     padding: 40px;
-    color: #ffffff;
-    border-radius: 30px;
+    padding-bottom: 30px;
+    color: #c6a9ff;
+    border-radius: 40%;
     font-size: 3em;
     transition: .3s;
   }
-
-  #add:hover{
-    background: #8f8f8f;
+  
+  #btnAdd:hover{
+    background: #8C52FF;
   }
 
-  .conteudo .btn{
-    /*text-transform: uppercase;*/
+  /*/////////////////////////////////*/
+
+  #ADDS{
+    display: none;
+    position: absolute;
+    z-index: 20000;
+    background-color: #0000006c;
+    height: 180vh;
+    width: 98.7vw;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(15px);
+    /*margin-top: -10vh;*/
+  }
+  
+  .main-cad{
+    width: 60vw;
+    height: 160vh;
+    border-radius: 12px;
+    background-image: linear-gradient(to bottom right, #000000, rgb(44, 44, 44));
+    /*background-image: linear-gradient(to bottom right, #fff2, transparent);*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.397);
+  }
+  
+  .down-cad{
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .down-cad h2{
+    color: #5CE1E6;
+  }
+  
+  #btnFechar{
+    display: block;
+    padding: 20px;
+    border-radius: 10vw;
+    margin-bottom: 2vh;
+    display: flex;
+    text-decoration: none;
+    color: rgb(201, 201, 201);
+    transition: .3s;
+  }
+  
+  #btnFechar:hover{
+    background-color: #313131;
+    color: rgb(255, 255, 255);
+  }
+  
+  #btnFechar .icon{
+    position: relative;
+    display: block;
+    min-width: 60px;
+    line-height: 70px;
+    text-align: center;
+  }
+  
+  #btnFechar .icon ion-icon{
+    position: relative;
+    font-size: 1.5em;
+  }
+  
+  .card-cad{
+    width: 85%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 35px;
+    background: rgba(0, 0, 0, 0);
+    border-radius: 20px;
+    box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.39);
+  }
+  
+  .card-cad > h1{
+    font-size: 1rem;
+    color: #ffffff;
+    font-weight: 1000;
+    margin: 0;
+    margin-bottom: 3vh;
+  }
+
+  .card-cad .btn{
+    text-transform: uppercase;
     position: relative;
     width: 300px;
     height: 80px;
     margin: 20px;
-    margin-bottom: 30px;
+    margin-bottom: 10vh;
   }
   
-  .conteudo .btn #btnLed{
+  .card-cad .btn #btnLed{
     font-size: 20px;
     position: absolute;
     top: 0;
@@ -345,11 +535,11 @@ body{
     backdrop-filter: blur(15px);
   }
   
-  .conteudo .btn:hover #btnLed{
+  .card-cad .btn:hover #btnLed{
     letter-spacing: 3px;
   }
   
-  .conteudo .btn #btnLed::before{
+  .card-cad .btn #btnLed::before{
     content: '';
     position: absolute;
     top: 0;
@@ -361,11 +551,11 @@ body{
     transition: 0.5s;
   }
   
-  .conteudo .btn:hover #btnLed::before{
+  .card-cad .btn:hover #btnLed::before{
     transform: skewX(45deg) translateX(175px);
   }
   
-  .conteudo .btn::before{
+  .card-cad .btn::before{
     content: '';
     position: absolute;
     left: 50%;
@@ -373,12 +563,16 @@ body{
     bottom: -5px;
     width: 50px;
     height: 10px;
-    background: red;
+    background: #5CE1E6;
+    box-shadow: 0 0 5px #5CE1E6,
+    0 0 15px #5CE1E6,
+    0 0 30px #5CE1E6,
+    0 0 60px #5CE1E6;
     border-radius: 10px;
     transition: 0.5s;
   }
   
-  .conteudo .btn:hover::before{
+  .card-cad .btn:hover::before{
     bottom: 0;
     height: 50%;
     width: 80%;
@@ -386,7 +580,7 @@ body{
     transition-delay: 0.5s;
   }
   
-  .conteudo .btn::after{
+  .card-cad .btn::after{
     content: '';
     position: absolute;
     left: 50%;
@@ -394,24 +588,173 @@ body{
     top: -5px;
     width: 50px;
     height: 10px;
-    background: red;
+    background: #8C52FF;
+    box-shadow: 0 0 5px #8C52FF,
+    0 0 15px #8C52FF,
+    0 0 30px #8C52FF,
+    0 0 60px #8C52FF;
     border-radius: 10px;
     transition: 0.5s;
   }
   
-  .conteudo .btn:hover::after{
+  .card-cad .btn:hover::after{
     top: 0;
     height: 50%;
     width: 80%;
     border-radius: 30px;
     transition-delay: 0.5s;
   }
-  
-  .conteudo .btn:nth-child(1)::before,
-  .conteudo .btn:nth-child(1)::after{
-    background: #1fe5ff;
-    box-shadow: 0 0 5px #1fe5ff,
-    0 0 15px #1fe5ff,
-    0 0 30px #1fe5ff,
-    0 0 60px #1fe5ff;
+
+/*///////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/*
+
+  #adds{
+    display: none;
+    z-index: 20000;
+    background-color: #0000006c;
+    height: 120vh;
+    width: 98.7vw;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(15px);
+}
+
+.main-cad{
+  width: 60vw;
+  height: 100vh;
+  border-radius: 12px;
+  background-image: linear-gradient(to bottom right, #000000, rgb(44, 44, 44));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.397);
+}
+
+.down-cad{
+    width: 100%;
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+  .down-cad .btn{
+    text-transform: uppercase;
+    position: relative;
+    width: 300px;
+    height: 80px;
+    margin-bottom: 30px;
   }
+  
+  .down-cad .btn #btnLed{
+    font-size: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 15px 35px rgb(0, 0, 0, 0.3);
+    border-top: 1px solid rgba(255, 255, 255, 0.01);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.01);
+    border-radius: 30px;
+    z-index: 1;
+    color: white;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-decoration: none;
+    overflow: hidden;
+    transition: 0.5s;
+    backdrop-filter: blur(15px);
+  }
+  
+  .down-cad .btn:hover #btnLed{
+    letter-spacing: 3px;
+  }
+  
+  .down-cad .btn #btnLed::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0.15), rgba(0, 0, 0, 0));
+    transform: skewX(45deg) translateX(0);
+    transition: 0.5s;
+  }
+  
+  .down-cad .btn:hover #btnLed::before{
+    transform: skewX(45deg) translateX(175px);
+  }
+  
+  .down-cad .btn::before{
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -5px;
+    width: 50px;
+    height: 10px;
+    background: #5CE1E6;
+    box-shadow: 0 0 5px #5CE1E6,
+    0 0 15px #5CE1E6,
+    0 0 30px #5CE1E6,
+    0 0 60px #5CE1E6;
+    border-radius: 10px;
+    transition: 0.5s;
+  }
+  
+  .down-cad .btn:hover::before{
+    bottom: 0;
+    height: 50%;
+    width: 80%;
+    border-radius: 30px;
+    transition-delay: 0.5s;
+  }
+  
+  .down-cad .btn::after{
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -5px;
+    width: 50px;
+    height: 10px;
+    background: #5CE1E6;
+    box-shadow: 0 0 5px #5CE1E6,
+    0 0 15px #5CE1E6,
+    0 0 30px #5CE1E6,
+    0 0 60px #5CE1E6;
+    border-radius: 10px;
+    transition: 0.5s;
+  }
+  
+  .down-cad .btn:hover::after{
+    top: 0;
+    height: 50%;
+    width: 80%;
+    border-radius: 30px;
+    transition-delay: 0.5s;
+  }*/
+  
+  /*.down-cad .btn:nth-child(1)::before,
+  .down-cad .btn:nth-child(1)::after{
+    background: #5CE1E6;
+    box-shadow: 0 0 5px #5CE1E6,
+    0 0 15px #5CE1E6,
+    0 0 30px #5CE1E6,
+    0 0 60px #5CE1E6;
+  }*/
+
+/*/////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+.rodape{
+  width: 100%;
+  height: 10vh;
+}

@@ -10,11 +10,60 @@
 
 <body>
 
+  <div id="ADDS">
+
+        <div class="main-cad">
+
+            <!--<div class="left-cad">
+                <a id="btnFechar" href="javascript:;" onclick="fechar('popup')">
+                    <span class="icon"><ion-icon name="close"></ion-icon></span>
+                </a>
+            </div>-->
+
+            <div class="down-cad">
+                <a id="btnFechar" href="javascript:;" onclick="fechar('ADDS')">
+                  Voltar
+                    <!--<span class="icon"><ion-icon name="close"></ion-icon></span>-->
+                </a>
+                <h2 id="topo">VAMOS ADICIONAR:</h2>
+                <div class="card-cad">
+                  <div class="btn">
+                    <a id="btnLed" href="adds/Bio.html">biografia</a>
+                  </div>
+                  <div class="btn">
+                    <a id="btnLed" href="adds/Info.html">informações</a>
+                  </div>
+                  <div class="btn">
+                    <a id="btnLed" href="adds/Fotos.html">fotos</a>
+                  </div>
+                  <div class="btn">
+                    <a id="btnLed" href="adds/Redes.html">redes sociais</a>
+                  </div>
+                </div>
+
+            </div>
+    
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        function abrir(id){
+            document.getElementById('ADDS').style.display = "flex";
+            document.getElementById('main-login').style.position = "fixed";
+            document.getElementById('h').style.position = "fixed";
+        }
+
+        function fechar(id){
+            document.getElementById('ADDS').style.display = "none";
+            document.getElementById('main-login').style.position = "initial";
+            document.getElementById('h').style.position = "initial";
+        }
+    </script>
+
     <div class="header">
         <img src="imagens/1.png">
         <h1>sf athletic</h1>
         <div class="mh">
-          <input type="text" name="pesquisar" id="pesquisar" class="InputUser" placeholder="Pesquisar" required>
         </div>
     </div>
 
@@ -39,7 +88,7 @@
           </li>
 
           <li class="lista">
-            <a href="TelaExplorar.html">
+            <a href="TelaUsuario.html">
               <span class="icon"><ion-icon name="search-outline"></ion-icon></span>
               <span class="title">Explorar</span>
             </a>
@@ -48,7 +97,8 @@
           <li class="lista">
             <a href="TelaInicio.html">
               <form method="post">
-                <input type="submit" class="logout" value="Logout" name="btnLogout">
+                <a class="logout" href="TelaInicio.html">LOGOUT</a>
+                <!---<input type="submit" class="logout" value="Logout" name="btnLogout">-->
               </form>
               <!--<span class="icon"><ion-icon name="enter-outline"></ion-icon></span>
               <span class="title">Logout</span>-->
@@ -78,62 +128,34 @@
 <!--------------------------------------------------------------------------------------------------------------------------------------------->
 
     <div class="ctn">
-      <h1 id="msg">Bem vindo, Matheus!</h1>
+      <h1 id="msg">Bem vindo!</h1>
 
-      <div class="conteudo">
+      <div class="conteudo" id="banner">
+        <img src="imagens/bnr.png">
         <div class="bx">
-          <a id="add" href="#"><span><ion-icon name="add"></ion-icon></span></a>
-          <div class="btn">
-            <a id="btnLed" href="index.botao2.html">
-                    Botão 1
-            </a>
-          </div>
+          <h1>Encontre outros atletas!</h1>
+        </div>
+        <div class="bx">
+          <input type="text" name="pesquisar" id="pesquisar" class="InputUser" placeholder="Pesquisar">
+        </div>
+      </div>
 
-          <!---
-          <div class="menu">
-            <div class="toggle"><ion-icon name="add-outline"></ion-icon></div>
-            <li style="--i:0;">
-              <a href="#"><ion-icon name="add-outline"></ion-icon></a>
-            </li>
-            <li style="--i:1;">
-              <a href="#"><ion-icon name="add-outline"></ion-icon></a>
-            </li>
-            <li style="--i:2;">
-              <a href="#"><ion-icon name="add-outline"></ion-icon></a>
-            </li>
-            <li style="--i:3;">
-              <a href="#"><ion-icon name="add-outline"></ion-icon></a>
-            </li>
-            <li style="--i:4;">
-              <a href="#"><ion-icon name="add-outline"></ion-icon></a>
-            </li>
-            <li style="--i:5;">
-              <a href="#"><ion-icon name="add-outline"></ion-icon></a>
-            </li>
-            <li style="--i:6;">
-              <a href="#"><ion-icon name="add-outline"></ion-icon></a>
-            </li>
-            <li style="--i:7;">
-              <a href="#"></a>
-            </li>
+      <hr>
 
-
-          </div>
-        -->
-
-          <script>
-            let menuToggle = document.querySelector('.toggle');
-            let menu = document.querySelector('.menu');
-            menuToggle.onclick = function(){
-              menu.classList.toggle('active')
-              menuToggle.classList.toggle('active')
-            }
-          </script>
+      <div class="conteudo" id="adicionar">
+        <div class="bx">
+          <h1>Que tal incrementar seu perfil?</h1>
+          <h2>Escolha os dados que deseja adicionar ao seu perfil!</h2>
+        </div>
+        <div class="bx">
+          <a id="btnAdd" href="javascript:; #popup" onclick="abrir('ADDS', 'main-login')"><span><ion-icon name="add"></ion-icon></span></a>
         </div>
       </div>
     </div>
 
   </div>
+
+  <div class="rodape"></div>
     
 
 
