@@ -22,13 +22,14 @@ async function createParseUsuários() {
       Usuários.set("esporte", document.getElementById("esporte").value);
       Usuários.set("sexo", sexo);
       Usuários.set("tipo_conta", tipoConta);
+      Usuários.set("senha",document.getElementById("senha"))
       try {
         Usuários = await Usuários.save();
         if (Usuários !== null) {
           alert(
             `New object created with success! ObjectId: ${
               Usuários.id
-            }, ${Usuários.get("Usuáriosname")}`
+            }, ${Usuários.get("Usuários")}`
           );
         }
       } catch (error) {

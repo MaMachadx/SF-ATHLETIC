@@ -18,17 +18,17 @@ body * {
 }
 
 ::-webkit-scrollbar{
-    width: 15px;
+    display: none;
 }
 
-::-webkit-scrollbar-track{
+/*::-webkit-scrollbar-track{
     background: #000000;
 }
 
 ::-webkit-scrollbar-thumb{
     background: linear-gradient(#8C52FF, #8C52FF, #5CE1E6);
     border-radius: 1vw;
-}
+}*/
 
 /*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 
@@ -193,7 +193,7 @@ background: #8C52FF;
     position: absolute;
     z-index: 2;
     background-color: #0000006c;
-    height: 245vh;
+    height: 230vh;
     width: 98.7vw;
     justify-content: center;
     align-items: center;
@@ -203,7 +203,7 @@ background: #8C52FF;
 
 .main-cad{
     width: 60vw;
-    height: 230vh;
+    height: 200vh;
     border-radius: 12px;
     background-image: linear-gradient(to bottom right, #000000, rgb(44, 44, 44));
     /*background-image: linear-gradient(to bottom right, #fff2, transparent);*/
@@ -346,6 +346,25 @@ background: #8C52FF;
     color: rgb(255, 255, 255);
   }
 
+  .btn-cadastrar{
+    border: none;
+    font-size: 15px;
+    display: block;
+    padding: 20px 40px;
+    border-radius: 10vw;
+    margin-bottom: 2vh;
+    display: flex;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    transition: .3s;
+  }
+
+  .btn-cadastrar:hover{
+    background-color: #8d55ff;
+    color: rgb(255, 255, 255);
+  }
+
 /*///////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 
 .ctd{
@@ -393,66 +412,7 @@ background: #8C52FF;
     width: 20vw;
 }
 
-/*
-
-.cad{
-    width: 98.9vw;
-    height: 100vh;
-    display: block;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-.c1{
-    width: 98.9vw;
-    height: 50%;
-    padding-top: 30vh;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-
-.c1 > h1{
-    color: #ffffff;
-    font-size: 3vw;
-}
-
-.c2{
-    width: 98.9vw;
-    height: 50%;
-    justify-content: center;
-    align-items: center;
-}
-
-.btn-cad{
-    margin-left: 28vw;
-    width: 40vw;
-    padding: 16px 0px;
-    border: none;
-    border-radius: 8px;
-    outline: none;
-    text-transform: uppercase;
-    font-weight: 800;
-    letter-spacing: 3px;
-    color: rgb(38, 80, 177);
-    background: #8C52FF;
-    cursor: pointer;
-    box-shadow: 0px 10px 40px -12px rgb(0, 48, 153);
-    transition: .3s;
-}
-
-.btn-cad > a{
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-}
-
-.btn-cad:hover{
-    letter-spacing: 5px;
-}
-
-*/
-
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 
 .cx{
     width: 98.9vw;
