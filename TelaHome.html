@@ -1,7 +1,20 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link href="css/HOME.css" rel="stylesheet" type="text/css" />
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <title>SF Athletic - Home</title>
+</head>
+
+<body>
 
   <div id="ADDS">
 
-        <div class="main-cad">
+        <div class="main-add">
 
             <!--<div class="left-cad">
                 <a id="btnFechar" href="javascript:;" onclick="fechar('popup')">
@@ -9,24 +22,44 @@
                 </a>
             </div>-->
 
-            <div class="down-cad">
+            <div class="down-add">
                 <a id="btnFechar" href="javascript:;" onclick="fechar('ADDS')">
                   Voltar
                     <!--<span class="icon"><ion-icon name="close"></ion-icon></span>-->
                 </a>
                 <h2 id="topo">VAMOS ADICIONAR:</h2>
-                <div class="card-cad">
-                  <div class="btn">
-                    <a id="btnLed" href="adds/Bio.html">biografia</a>
+                <div class="card-add">
+                  
+                  <div class="btn" id="btn">
+                    <a id="btnLed" href="Bio.html">biografia</a>
+                    <!--<a id="btnLed" href="javascript:; #popup" onclick="bioA('main-login', 'bio', 'btn')">biografia</a>
+                    <script type="text/javascript">
+                      function bioA(id){
+                          document.getElementById('ADDS').style.height = "200vh";
+                          document.getElementById('inputAdd').style.display = "flex";
+                          document.getElementById('main-login').style.position = "fixed";
+                      }
+                  
+                      function bioF(id){
+                          document.getElementById('inputAdd').style.display = "none";
+                          document.getElementById('btn').style.display = "flex";
+                      }
+                    </script>
+                  </div>
+                  <div id="inputAdd" class="inputAdd">
+                    <input type="text" name="biografia" id="biografia" class="iAdd" placeholder="Adicione sua biografia">
+                    <a id="btnFechar" href="javascript:;" onclick="bioF('inputAdd')"></a>-->
+                  </div>
+
+
+                  <div class="btn" id="btn">
+                    <a id="btnLed" href="Info.html">informações</a>
                   </div>
                   <div class="btn">
-                    <a id="btnLed" href="adds/Info.html">informações</a>
+                    <a id="btnLed" href="Fotos.html">fotos</a>
                   </div>
                   <div class="btn">
-                    <a id="btnLed" href="adds/Fotos.html">fotos</a>
-                  </div>
-                  <div class="btn">
-                    <a id="btnLed" href="adds/Redes.html">redes sociais</a>
+                    <a id="btnLed" href="Redes.html">redes sociais</a>
                   </div>
                 </div>
 
@@ -36,17 +69,17 @@
     </div>
 
     <script type="text/javascript">
-        function abrir(id){
-            document.getElementById('ADDS').style.display = "flex";
-            document.getElementById('main-login').style.position = "fixed";
-            document.getElementById('h').style.position = "fixed";
-        }
-
-        function fechar(id){
-            document.getElementById('ADDS').style.display = "none";
-            document.getElementById('main-login').style.position = "initial";
-            document.getElementById('h').style.position = "initial";
-        }
+      function abrir(id){
+          document.getElementById('ADDS').style.display = "flex";
+          document.getElementById('main-login').style.position = "fixed";
+          document.getElementById('h').style.position = "fixed";
+      }
+  
+      function fechar(id){
+          document.getElementById('ADDS').style.display = "none";
+          document.getElementById('main-login').style.position = "initial";
+          document.getElementById('h').style.position = "initial";
+      }
     </script>
 
     <div class="header">
@@ -77,9 +110,9 @@
           </li>
 
           <li class="lista">
-            <a href="TelaUsuario.html">
-              <span class="icon"><ion-icon name="search-outline"></ion-icon></span>
-              <span class="title">Explorar</span>
+            <a href="#">
+              <span class="icon"><ion-icon name="settings"></ion-icon></span>
+              <span class="title">Configurações</span>
             </a>
           </li>
     
@@ -95,9 +128,6 @@
           </li>
         </ul>
       </div>
-    
-      <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-      <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     
       <script>
     
@@ -125,7 +155,7 @@
           <h1>Encontre outros atletas!</h1>
         </div>
         <div class="bx">
-          <input type="text" name="pesquisar" id="pesquisar" class="InputUser" placeholder="Pesquisar">
+          <input type="text" name="pesquisar" id="pesquisar" class="InputUser" placeholder="Pesquisar" onclick="pesquisa('user')">
         </div>
       </div>
 
@@ -136,7 +166,7 @@
           <h1>Que tal incrementar seu perfil?</h1>
           <h2>Escolha os dados que deseja adicionar ao seu perfil!</h2>
         </div>
-        <div class="bx">
+        <div class="bx" id="psq">
           <a id="btnAdd" href="javascript:; #popup" onclick="abrir('ADDS', 'main-login')"><span><ion-icon name="add"></ion-icon></span></a>
         </div>
       </div>
@@ -146,3 +176,9 @@
 
   <div class="rodape"></div>
     
+  <script src="script.js"></script>
+  <script src="sugestoes.js"></script>
+
+</body>
+
+</html>

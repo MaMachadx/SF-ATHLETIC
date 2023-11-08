@@ -1,6 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>SF Athletic - Login</title>
+  <link rel="icon" type="image/x-icon" href="imagens/1.png">
+  <link href="css/INI.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
     <div id="popup">
 
         <div class="main-cad">
+
+            <!--<div class="left-cad">
+                <a id="btnFechar" href="javascript:;" onclick="fechar('popup')">
+                    <span class="icon"><ion-icon name="close"></ion-icon></span>
+                </a>
+            </div>-->
 
             <div class="down-cad">
                 <a id="btnFechar" href="javascript:;" onclick="fechar('popup')">
@@ -10,7 +29,7 @@
                 <div class="card-cad">
                     <h1>Preencha os campos e crie sua conta!</h1>
                     <div class="box">
-                        <div>
+                        <form action="">
                             <div class="inputBox">
                                 <label for="nome">Nome completo</label>
                                 <input type="text" name="nome" id="nome" class="InputUser" placeholder="Nome completo" required>
@@ -31,10 +50,8 @@
                             <p>Sexo:</p>
                             <input type="radio" id="feminino" name="genero" value="feminino" required>
                             <label for="feminino" class="s">Feminino</label>
-
                             <input type="radio" id="masculino" name="genero" value="masculino" required>
                             <label for="masculino" class="s">Masculino</label>
-
                             <input type="radio" id="outro" name="genero" value="outro" required>
                             <label for="outro"  class="s">Outro</label>
     
@@ -59,17 +76,33 @@
                             <div class="inputBox">
                                 <label for="esporte">Nome da sua equipe/time</label>
                                 <input type="text" name="esporte" id="esporte" class="InputUser" placeholder="Esporte" required>
-                            </div>                            
+                            </div>
                             
-                        </div>
+                            <center><input type="submit" name="submit" id="submit" class="btn-cadastrar" href="TelaHome.html"></center>
+                            
+                        </form>
                     </div>
-                    <a id="submit" href="#popup">CONFERIR</a>
+                    <a id="subir" href="#popup">CONFERIR</a>
                 </div>
 
             </div>
     
         </div>
     </div>
+
+    <script type="text/javascript">
+        function abrir(id){
+            document.getElementById('popup').style.display = "flex";
+            document.getElementById('main-login').style.position = "fixed";
+            document.getElementById('h').style.position = "fixed";
+        }
+
+        function fechar(id){
+            document.getElementById(id).style.display = "none";
+            document.getElementById('main-login').style.position = "initial";
+            document.getElementById('h').style.position = "initial";
+        }
+    </script>
 
 <!-------------------------------------------------------------------------------------------------------------->
 
@@ -133,7 +166,7 @@
 <!------------------------------------------------------------------------------------------------------------->
 
     <div class="cx">
-            <h1>SF Athletic </h1>
+            <h1>@SF Athletic</h1>
         <hr>
         <img src="imagens/1.png">
         <hr>
@@ -152,4 +185,6 @@
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
-    <script src="js/Telainicio.js"></script>
+</body>
+
+</html>
