@@ -89,6 +89,63 @@
     
         </div>
     </div>
+    <script>// Create a new User
+
+        async function createParseUsuários() {
+            let sexo =""
+            
+          // Creates a new Parse "Usuários" object, which is created by default in your Parse app
+          let Usuários = new Parse.Usuario();
+          // Set the input values to the new "Usuários" object
+          Usuários.set("nome", document.getElementById("nome").value);
+          Usuários.set("senha", document.getElementById("senha").value);
+          Usuários.set("E-mail", document.getElementById("email").value);
+          Usuários.set("Telefone", document.getElementById("telefone").value);
+          Usuários.set("Dados_Nasc", document.getElementById("data_nascimento").value);
+          Usuários.set("Cidade", document.getElementById("cidade").value);
+          Usuários.set("Estado", document.getElementById("estado").value);
+          Usuários.set("nome_team", document.getElementById("esporte").value);
+    
+        //   if( document.getElementById("feminino").addEventListener("click") ){
+        //     Usuários.set("sexo", document.getElementById("feminino").value);
+        //   }
+        //   else   if( document.getElementById("masculino").addEventListener("click") ){
+        //     Usuários.set("sexo", document.getElementById("masculino").value);
+        //   }
+        //   else  if( document.getElementById("outro").addEventListener("click") ){
+        //     Usuários.set("sexo", document.getElementById("outro").value);
+        //   }
+    
+        //   if( document.getElementById("atleta").addEventListener("click") ){
+        //     Usuários.set("tipo_conta", document.getElementById("atleta").value);
+        //   }
+        //   else   if( document.getElementById("olheiro").addEventListener("click") ){
+        //     Usuários.set("tipo_conta", document.getElementById("olheiro").value);
+        //   } 
+    
+        
+        //   Usuários.set("password", document.getElementById("password").value);
+          try {
+            // Call the save method, which returns the saved object if successful
+            Usuários = await Usuários.save();
+            if (Usuários !== null) {
+              // Notify the success by getting the attributes from the "Usuários" object, by using the get method (the id attribute needs to be accessed directly, though)
+              alert(
+                `New object created with success! ObjectId: ${
+                  Usuários.id
+                }, ${Usuários.get("Usuáriosname")}`
+              );
+            }
+          } catch (error) {
+            alert(`Error: ${error.message}`);
+          }
+        }
+    
+        // Add on click listener to call the create parse Usuários function
+        document.getElementById("submit").addEventListener("click", async function () {
+          createParseUsuários();
+        });
+        </script> 
 
     <script type="text/javascript">
         function abrir(id){
