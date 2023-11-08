@@ -1,30 +1,6 @@
-<!DOCTYPE html>
-<html>
-
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>SF Athletic - Login</title>
-  <link rel="icon" type="image/x-icon" href="imagens/1.png">
-  <link href="css/INI.css" rel="stylesheet" type="text/css" />
-  <script>
-    // Initialize Parse
-    Parse.initialize("O2eAlOYFMepJ3Xq1EPAUdlzbLJI7a7FUGOAizd7h", "EWNAS3OnferiSjEEluoym2r0RL1As3yfmFaiJmHm"); //PASTE HERE YOUR Back4App APPLICATION ID AND YOUR JavaScript KEY
-    Parse.serverURL = "https://parseapi.back4app.com/";
-  </script>
-</head>
-
-<body>
-
     <div id="popup">
 
         <div class="main-cad">
-
-            <!--<div class="left-cad">
-                <a id="btnFechar" href="javascript:;" onclick="fechar('popup')">
-                    <span class="icon"><ion-icon name="close"></ion-icon></span>
-                </a>
-            </div>-->
 
             <div class="down-cad">
                 <a id="btnFechar" href="javascript:;" onclick="fechar('popup')">
@@ -34,7 +10,7 @@
                 <div class="card-cad">
                     <h1>Preencha os campos e crie sua conta!</h1>
                     <div class="box">
-                        <form action="">
+                        <div>
                             <div class="inputBox">
                                 <label for="nome">Nome completo</label>
                                 <input type="text" name="nome" id="nome" class="InputUser" placeholder="Nome completo" required>
@@ -55,8 +31,10 @@
                             <p>Sexo:</p>
                             <input type="radio" id="feminino" name="genero" value="feminino" required>
                             <label for="feminino" class="s">Feminino</label>
+
                             <input type="radio" id="masculino" name="genero" value="masculino" required>
                             <label for="masculino" class="s">Masculino</label>
+
                             <input type="radio" id="outro" name="genero" value="outro" required>
                             <label for="outro"  class="s">Outro</label>
     
@@ -81,90 +59,17 @@
                             <div class="inputBox">
                                 <label for="esporte">Nome da sua equipe/time</label>
                                 <input type="text" name="esporte" id="esporte" class="InputUser" placeholder="Esporte" required>
-                            </div>
+                            </div>                            
                             
-                            <center><input type="submit" name="submit" id="submit" class="btn-cadastrar" href="TelaHome.html"></center>
-                            
-                        </form>
+                        </div>
                     </div>
-                    <a id="subir" href="#popup">CONFERIR</a>
+                    <a id="submit" href="#popup">CONFERIR</a>
                 </div>
 
             </div>
     
         </div>
     </div>
-    <script>// Create a new User
-
-        async function createParseUsuários() {
-            let sexo ="" 
-
-          // Creates a new Parse "Usuários" object, which is created by default in your Parse app
-          let Usuários = new Parse.Usuario();
-          // Set the input values to the new "Usuários" object
-          Usuários.set("nome", document.getElementById("nome").value);
-          Usuários.set("senha", document.getElementById("senha").value);
-          Usuários.set("E-mail", document.getElementById("email").value);
-          Usuários.set("Telefone", document.getElementById("telefone").value);
-          Usuários.set("Dados_Nasc", document.getElementById("data_nascimento").value);
-          Usuários.set("Cidade", document.getElementById("cidade").value);
-          Usuários.set("Estado", document.getElementById("estado").value);
-          Usuários.set("nome_team", document.getElementById("esporte").value);
-    
-        //   if( document.getElementById("feminino").addEventListener("click") ){
-        //     Usuários.set("sexo", document.getElementById("feminino").value);
-        //   }
-        //   else   if( document.getElementById("masculino").addEventListener("click") ){
-        //     Usuários.set("sexo", document.getElementById("masculino").value);
-        //   }
-        //   else  if( document.getElementById("outro").addEventListener("click") ){
-        //     Usuários.set("sexo", document.getElementById("outro").value);
-        //   }
-    
-        //   if( document.getElementById("atleta").addEventListener("click") ){
-        //     Usuários.set("tipo_conta", document.getElementById("atleta").value);
-        //   }
-        //   else   if( document.getElementById("olheiro").addEventListener("click") ){
-        //     Usuários.set("tipo_conta", document.getElementById("olheiro").value);
-        //   } 
-    
-        
-        //   Usuários.set("password", document.getElementById("password").value);
-          try {
-            // Call the save method, which returns the saved object if successful
-            Usuários = await Usuários.save();
-            if (Usuários !== null) {
-              // Notify the success by getting the attributes from the "Usuários" object, by using the get method (the id attribute needs to be accessed directly, though)
-              alert(
-                `New object created with success! ObjectId: ${
-                  Usuários.id
-                }, ${Usuários.get("Usuáriosname")}`
-              );
-            }
-          } catch (error) {
-            alert(`Error: ${error.message}`);
-          }
-        }
-    
-        // Add on click listener to call the create parse Usuários function
-        document.getElementById("submit").addEventListener("click", async function () {
-          createParseUsuários();
-        });
-        </script> 
-
-    <script type="text/javascript">
-        function abrir(id){
-            document.getElementById('popup').style.display = "flex";
-            document.getElementById('main-login').style.position = "fixed";
-            document.getElementById('h').style.position = "fixed";
-        }
-
-        function fechar(id){
-            document.getElementById(id).style.display = "none";
-            document.getElementById('main-login').style.position = "initial";
-            document.getElementById('h').style.position = "initial";
-        }
-    </script>
 
 <!-------------------------------------------------------------------------------------------------------------->
 
@@ -228,7 +133,7 @@
 <!------------------------------------------------------------------------------------------------------------->
 
     <div class="cx">
-            <h1>@SF Athletic</h1>
+            <h1>SF Athletic </h1>
         <hr>
         <img src="imagens/1.png">
         <hr>
@@ -247,6 +152,4 @@
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
-</body>
-
-</html>
+    <script src="js/Telainicio.js"></script>

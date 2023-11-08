@@ -1,0 +1,14 @@
+{
+  "name": "sf-athletic",
+  "version": "1.0.0",
+  "description": "sistema-f",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "jquery": "^3.7.1"
+  }
+}
