@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
@@ -94,13 +93,16 @@
     <script type="text/javascript">
         function abrir(id){
             document.getElementById('popup').style.display = "flex";
+            document.getElementsByTagName('body').style.backgroundPosition = "fixed";
             document.getElementById('main-login').style.position = "fixed";
+            document.getElementById('sobre').style.display = "none";
             document.getElementById('h').style.position = "fixed";
         }
 
         function fechar(id){
-            document.getElementById(id).style.display = "none";
+            document.getElementById('popup').style.display = "none";
             document.getElementById('main-login').style.position = "initial";
+            document.getElementById('sobre').style.display = "flex";
             document.getElementById('h').style.position = "initial";
         }
     </script>
@@ -110,13 +112,15 @@
         <div class="h" id="h">
                 <a href="#sobre">sobre</a>
                 <a href="javascript:;" onclick="abrir('popup', 'main-login')">criar conta</a>
+                <a href="#creditos">créditos</a>
         </div>
 
     <div class="main-login" id="main-login">
 
         <div class="left-login">
-            <img src="imagens/6.png " class="left-login-image">
-            <h1>Seu futuro no esporte está aqui!</h1>
+            <img src="imagens/transparente.png " class="left-login-image">
+            <h1>SF ATHLETIC</h1>
+            <h1>Seu futuro no espote está aqui!</h1>
         </div>
 
         <div class="right-login">
@@ -166,10 +170,10 @@
 
 <!------------------------------------------------------------------------------------------------------------->
 
-    <div class="cx">
+    <div class="cx" id="creditos">
             <h1>@SF Athletic</h1>
         <hr>
-        <img src="imagens/1.png">
+        <img src="imagens/transparente.png">
         <hr>
         <h2> DESENVOLVIDO POR:
             <br>    

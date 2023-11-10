@@ -8,10 +8,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Prompt:wght@600&display=swap');
 
 body{
-    background-color: #0f0f0f;
+  background-color: #0f0f0f;
   font-family: 'Poppins', sans-serif;
   margin: 0;
-  padding-bottom: 30vh;
 }
 
 ::-webkit-scrollbar{
@@ -102,8 +101,7 @@ body{
 .container{
   display: flex;
   width: 98.9vw;
-  height: 94vh;
-  padding-bottom: 15vh;
+  height: 75vh;
 }
 
 .MENU{
@@ -283,6 +281,7 @@ body{
   }
 
   #msg{
+    font-size: 1.5em;
     color:#ffffff;
   }
 
@@ -295,7 +294,7 @@ body{
 
   #banner{
     overflow: hidden;
-    height: 30vh;
+    height: 20vh;
     background: linear-gradient(to right, #00B6BD, #00B6BD, #5CE1E6);
     border-radius: 15px;
     margin-bottom: 6vh;
@@ -331,7 +330,7 @@ body{
 
   #pesquisar{
     width: 100%;
-    margin-top: 2vh;
+    margin-top: 0;
     border: 2px solid #474747;
     border-radius: 8px;
     padding: 2.5vh;
@@ -800,39 +799,3 @@ body{
 
 /*///////////////////////////////////////////////////////////////////////////////////////////////////*/
 
-.rodape{
-  width: 100%;
-  height: 10vh;
-}
-
-.inputAdd{
-  display: none;
-  width: 100%;
-  height: 100%;
-}
-
-.iAdd{
-  width: 100%;
-  margin-top: 2vh;
-  border: 2px solid #474747;
-  border-radius: 8px;
-  padding: 2.5vh;
-  background: #0f0f0f;
-  color: rgb(255, 255, 255);
-  font-size: 12pt;
-  /*box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.473);*/
-  outline: none;
-  box-sizing: border-box;
-  transition: .5s;
-}
-
-.iAdd::placeholder{
-  color: #ffffffa4;
-  font-size: 1vw;
-  font-weight: 400;
-}
-
-#pesquisar:hover{
-  border-radius: 15px;
-  background: #1f1f1f;
-}
