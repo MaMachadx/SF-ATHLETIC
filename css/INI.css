@@ -1,3 +1,6 @@
+/*Kanit*/
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,500&display=swap');
+
 /*Poppins*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Righteous&display=swap');
 
@@ -12,7 +15,7 @@ body{
     margin: 0;
     font-family:'Poppins', sans-serif;
     background-image: linear-gradient(to bottom right, /*#527aff,*/#5CE1E6, #5d0dff);
-    background-size: 500% 100%;
+    background-size: 550% 150%;
     background-position: fixed;
     animation: degrade-animado 3s infinite alternate;/*#5CE1E6*/ /*#8C52FF*/;
 }
@@ -91,21 +94,20 @@ body * {
 }
 
 .left-login > h1{
-    font-family: 'Prompt', sans-serif;
-    font-size: 2vw;
+    font-family: 'Kanit', sans-serif;
+    font-size: 3vw;
     color: white;
     margin-top: 5vh;
     transition: .6s;
 }
 
 .left-login > h1:hover{
-    font-size: 2.5vw;
+    letter-spacing: 5px;
 }
 
 .left-login-image{
-    margin-top: 5vh;
-    width: 15vw;
-    border-radius: 100px;
+    margin-top: 1vh;
+    width: 20vw;
 }
 
 .right-login{
@@ -380,7 +382,7 @@ body * {
 /*///////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 
 .ctd{
-    background-color: #111111;
+    background-color: #222222;
     width: 100vw;
     height: 95vh;
     display: flex;
