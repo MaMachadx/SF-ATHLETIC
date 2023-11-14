@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>SF Athletic - Cadastro</title>
+  <link href="css/CAD.css" rel="stylesheet" type="text/css" />
+  <script type="text/javascript" src="https://npmcdn.com/parse/dist/parse.min.js"></script>
+  <script>
+  Parse.serverURL = 'https://parseapi.back4app.com'; // This is your Server URL
+  // Remember to inform BOTH the Back4App Application ID AND the JavaScript KEY
+  Parse.initialize(
+    'O2eAlOYFMepJ3Xq1EPAUdlzbLJI7a7FUGOAizd7h', // This is your Application ID
+    'EWNAS3OnferiSjEEluoym2r0RL1As3yfmFaiJmHm' // This is your Javascript key
+  );
+  </script>
+</head>
+
+<body>
+
+    <div class="main-cad">
+
+        <div class="left-cad">
+            <img src="imagens/6.png " class="left-cad-image">
+            <h1>Crie sua conta de atleta ou olheiro!</h1>
+            <a class="btn-voltar" href="TelaInicio.html"><button>Voltar ao login</button></a>
+        </div>
+
+        <div class="right-cad">
+            <div class="card-cad">
+                <h1>CRIAR CONTA</h1>
+                <div class="box">
+                    <div>
+                        <div class="inputBox">
+                            <label for="nome">Nome completo</label>
+                            <input type="text" name="nome" id="nome" class="InputUser" placeholder="Nome completo" required>
+                        </div>
+                        <div class="inputBox">
+                            <label for="email">Email</label>
+                            <input type="text" name="email" id="email" class="InputUser" placeholder="Email" required>
+                        </div>
+                        <div class="inputBox">
+                            <label for="telefone">Telefone</label>
+                            <input type="text" name="telefone" id="telefone" class="InputUser" placeholder="Telefone" required>
+                        </div>
+                        <div class="inputBox">
+                            <label for="data_nascimento">Data de nascimento</label>
+                            <input type="date" name="data_nascimento" id="data_nascimento" class="InputUser" required>
+                        </div>
+
+                        <p>Sexo:</p>
+                        <input type="radio" id="feminino" name="genero" value="feminino" required>
+                        <label for="feminino" class="s">Feminino</label>
+                        <input type="radio" id="masculino" name="genero" value="masculino" required>
+                        <label for="masculino" class="s">Masculino</label>
+                        <input type="radio" id="outro" name="genero" value="outro" required>
+                        <label for="outro"  class="s">Outro</label>
+
+                        <p>Tipo de conta:</p>
+                        <input type="radio" id="atleta" name="tipo" value="atleta" required>
+                        <label for="atleta" class="s">Atleta</label>
+                        <input type="radio" id="olheiro" name="tipo" value="olheiro" required>
+                        <label for="olheiro" class="s">Olheiro</label>
+
+                        <div class="inputBox">
+                            <label for="cidade">Cidade</label>
+                            <input type="text" name="cidade" id="cidade" class="InputUser" placeholder="Cidade" required>
+                        </div>
+                        <div class="inputBox">
+                            <label for="estado">Estado</label>
+                            <input type="text" name="estado" id="estado" class="InputUser" placeholder="Estado" required>
+                        </div>
+                        <div class="inputBox">
+                            <label for="esporte">Esporte</label>
+                            <input type="text" name="esporte" id="esporte" class="InputUser" placeholder="Esporte" required>
+                        </div>
+                        <div class="inputBox">
+                            <label for="esporte">Nome da sua equipe/time</label>
+                            <input type="text" name="esporte" id="esporte" class="InputUser" placeholder="Esporte" required>
+                        </div>
+                        <center>
+                          <button  id="btn-cadastrar" class="btn-cadastrar" >0euiruwqerwpqrp</button>
+                        </center>
+                       
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script>       
+   
+// let sexo = ""
+
+
+  //  async function createParseUsuarios() {
+      // Creates a new Parse "Usuarios" object, which is created by default in your Parse app
+      // let Usuarios = new Parse.Usuarios();
+      // Set the input values to the new "Usuarios" object
+      // Usuarios.set("nome", document.getElementById("nome").value);
+      // Usuarios.set("senha", document.getElementById("senha").value);
+      // Usuarios.set("E-mail", document.getElementById("email").value);
+      // Usuarios.set("Telefone", document.getElementById("telefone").value);
+      // Usuarios.set("Dados_Nasc", document.getElementById("data_nascimento").value);
+      // Usuarios.set("Cidade", document.getElementById("cidade").value);
+      // Usuarios.set("Estado", document.getElementById("estado").value);
+      // Usuarios.set("nome_team", document.getElementById("esporte").value);
+
+    //   if( document.getElementById("feminino").addEventListener("click") ){
+    //     Usuarios.set("sexo", document.getElementById("feminino").value);
+    //   }
+    //   else   if( document.getElementById("masculino").addEventListener("click") ){
+    //     Usuarios.set("sexo", document.getElementById("masculino").value);
+    //   }
+    //   else  if( document.getElementById("outro").addEventListener("click") ){
+    //     Usuarios.set("sexo", document.getElementById("outro").value);
+    //   }
+
+    //   if( document.getElementById("atleta").addEventListener("click") ){
+    //     Usuarios.set("tipo_conta", document.getElementById("atleta").value);
+    //   }
+    //   else   if( document.getElementById("olheiro").addEventListener("click") ){
+    //     Usuarios.set("tipo_conta", document.getElementById("olheiro").value);
+    //   } 
+
+    
+    //   Usuarios.set("password", document.getElementById("password").value);
+      // try {
+        // Call the save method, which returns the saved object if successful
+    //     // Usuarios = await Usuarios.save();
+    //     if (Usuarios !== null) {
+    //       // Notify the success by getting the attributes from the "Usuarios" object, by using the get method (the id attribute needs to be accessed directly, though)
+    //       alert(
+    //         `New object created with success! ObjectId: ${
+    //           Usuarios.id
+    //         }, ${Usuarios.get("Usuariosname")}`
+    //       );
+    //     }
+    //   } catch (error) {
+    //     alert(`Error: ${error.message}`);
+    //   }
+    // }
+
+    // // Add on click listener to call the create parse Usuarios function
+    // document.getElementById("submit").addEventListener("click", async function () {
+    //   createParseUsuarios();
+    // });
+
+    //       //   Usuario.set("password", document.getElementById("password").value);
+    //       try {
+    //       // Call the save method, which returns the saved object if successful
+    //       Usuario = await Usuario.save();
+    //       if (Usuario !== null) {
+    //         // Notify the success by getting the attributes from the "Usuarios" object, by using the get method (the id attribute needs to be accessed directly, though)
+    //         alert(
+    //           `New object created with success! ObjectId: ${
+    //             Usuario.id
+    //           }, ${Usuario.get("Usuarios")}`
+    //         );
+    //       }
+    //     } catch (error) {
+    //       alert(`Error: ${error.message}`);
+    //     }
+      
+  
+    //   // Add on click listener to call the create parse Usuarios function
+    //   document.getElementById("btncad").addEventListener("click", createParseUsuarios );
+    // </script> 
+    
+  <!--
+    <div id="sf">
+      <img src="1.png">
+      <p id="s">SF ATHLETIC</p>
+    </div>
+  -->
+
+<!--
+  <div id="sf">
+    <img src="1.png">
+    <p id="s">SF ATHLETIC</p>
+  </div>
+-->
+  
+</body>
+
+</html>

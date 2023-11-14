@@ -5,9 +5,11 @@
   <meta name="viewport" content="width=device-width">
   <link rel="icon" type="image/x-icon" href="imagens/1.png">
   <link href="css/INI.css" rel="stylesheet" type="text/css" />
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  
+
   <title>SF Athletic - Login</title>
+
+
 </head>
 
 <body>
@@ -24,63 +26,63 @@
                 <div class="card-cad">
                     <h1>Preencha os campos e crie sua conta!</h1>
                     <div class="box">
-                        <form action="">
+                        <div>
                             <div class="inputBox">
                                 <label for="nome">Nome completo</label>
-                                <input type="text" name="nome" id="nome" class="InputUser" placeholder="Nome completo" required>
+                                <input type="text" name="nome" id="nome" class="InputUser" placeholder="Nome completo" >
                             </div>
                             <div class="inputBox">
                                 <label for="email">Email</label>
-                                <input type="text" name="email" id="email" class="InputUser" placeholder="Email" required>
+                                <input type="text" name="email" id="email" class="InputUser" placeholder="Email" >
                             </div>
                             <div class="inputBox">
                                 <label for="Senha">Senha</label>
-                                <input type="text" name="senha" id="senha" class="InputUser" placeholder="Senha"required>
+                                <input type="text" name="senha" id="senha" class="InputUser" placeholder="Senha">
                             </div>
                             <div class="inputBox">
                                 <label for="telefone">Telefone</label>
-                                <input type="text" name="telefone" id="telefone" class="InputUser" placeholder="Telefone" required>
+                                <input type="text" name="telefone" id="telefone" class="InputUser" placeholder="Telefone" >
                             </div>
                             <div class="inputBox">
                                 <label for="data_nascimento">Data de nascimento</label>
-                                <input type="date" name="data_nascimento" id="data_nascimento" class="InputUser" required>
+                                <input type="date" name="data_nascimento" id="data_nascimento" class="InputUser" >
                             </div>
 
     
                             <p>Sexo:</p>
-                            <input type="radio" id="feminino" name="genero" value="feminino" required>
+                            <input type="radio" id="feminino" name="genero" value="feminino" >
                             <label for="feminino" class="s">Feminino</label>
-                            <input type="radio" id="masculino" name="genero" value="masculino" required>
+                            <input type="radio" id="masculino" name="genero" value="masculino" >
                             <label for="masculino" class="s">Masculino</label>
-                            <input type="radio" id="outro" name="genero" value="outro" required>
+                            <input type="radio" id="outro" name="genero" value="outro" >
                             <label for="outro"  class="s">Outro</label>
     
                             <p>Tipo de conta:</p>
-                            <input type="radio" id="atleta" name="tipo" value="atleta" required>
+                            <input type="radio" id="atleta" name="tipo" value="atleta" >
                             <label for="atleta" class="s">Atleta</label>
-                            <input type="radio" id="olheiro" name="tipo" value="olheiro" required>
+                            <input type="radio" id="olheiro" name="tipo" value="olheiro" >
                             <label for="olheiro" class="s">Olheiro</label>
     
                             <div class="inputBox">
                                 <label for="cidade">Cidade</label>
-                                <input type="text" name="cidade" id="cidade" class="InputUser" placeholder="Cidade" required>
+                                <input type="text" name="cidade" id="cidade" class="InputUser" placeholder="Cidade" >
                             </div>
                             <div class="inputBox">
                                 <label for="estado">Estado</label>
-                                <input type="text" name="estado" id="estado" class="InputUser" placeholder="Estado" required>
+                                <input type="text" name="estado" id="estado" class="InputUser" placeholder="Estado" >
                             </div>
                             <div class="inputBox">
                                 <label for="esporte">Esporte</label>
-                                <input type="text" name="esporte" id="esporte" class="InputUser" placeholder="Esporte" required>
+                                <input type="text" name="esporte" id="esporte" class="InputUser" placeholder="Esporte" >
                             </div>
                             <div class="inputBox">
                                 <label for="esporte">Nome da sua equipe/time</label>
-                                <input type="text" name="esporte" id="esporte" class="InputUser" placeholder="Esporte" required>
+                                <input type="text" name="t-esporte" id="t-esporte" class="InputUser" placeholder="Esporte" >
                             </div>
                             
-                            <center><input type="submit" name="submit" id="submit" class="btn-cadastrar" href="TelaHome.html"></center>
+                            <button  id="btn-cadastrar" class="btn-cadastrar" >enviar</button>
                             
-                        </form>
+                        </div>
                     </div>
                     <a id="subir" href="#popup">CONFERIR</a>
                 </div>
@@ -185,7 +187,7 @@
             Rafael Ferreira
         </h2>
     </div>
-
+<script src="js/Telainicio.js"> </script>
 </body>
 
 </html>
