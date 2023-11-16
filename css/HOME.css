@@ -7,6 +7,9 @@
 /*Prompt*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Prompt:wght@600&display=swap');
 
+/*Kanit*/
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,500&display=swap');
+
 body{
   background-color: #0f0f0f;
   font-family: 'Poppins', sans-serif;
@@ -29,6 +32,7 @@ body{
 /*//////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 
 .header{
+  font-family: 'Kanit', sans-serif;
   background-image: linear-gradient(to right, #000000, #000000, #1d1d1d);
   width: 98.9vw;
   height: 4vw;
@@ -228,7 +232,8 @@ body{
     padding-bottom: 1vh;
     padding-left: 3vw;
     padding-right: 5.5vw;
-    margin-top: 10vh;
+    margin-top: 30vh;
+    margin-left: -130px;
     border: none;
     position: relative;
     display: none;
@@ -238,8 +243,7 @@ body{
     transition: .6s;
   }
 
-  .navg .logout:hover{
-
+  .navg:hover .logout:hover{
     color: #ffffff;
   }
 
@@ -404,16 +408,21 @@ body{
   align-items: center;
 }
 
+#adicionar img{
+  margin: 0;
+  height: 35vh;
+  transition: .5s;
+}
+
 #adicionar h1{
-  margin-left: 3vw;
+    margin-left: -10vw;
     font-size: 2em;
-    color: #c6a9ff;
+    color: white;
     transition: .5s;
 }
 
-#adicionar:hover h1{
-  color: white;
-  font-size: 2.2em;
+#adicionar:hover img{
+  height: 40vh;
 }
 
 #adicionar:hover #add{
@@ -421,7 +430,7 @@ body{
 }
 
 #adicionar h2{
-    margin-left: 3vw;
+    margin-left: -10vw;
     font-size: 1em;
     color: white;
     transition: .5s;
@@ -450,8 +459,8 @@ body{
     position: absolute;
     z-index: 20000;
     background-color: #0000006c;
-    height: 130vh;
-    width: 98.7vw;
+    height: 100vh;
+    width: 100vw;
     justify-content: center;
     align-items: center;
     backdrop-filter: blur(15px);
@@ -459,8 +468,8 @@ body{
   }
   
   .main-add{
-    width: 60vw;
-    height: 110vh;
+    width: 85vw;
+    height: 80vh;
     border-radius: 12px;
     background-image: linear-gradient(to bottom right, #000000, rgb(44, 44, 44));
     /*background-image: linear-gradient(to bottom right, #fff2, transparent);*/
@@ -470,25 +479,11 @@ body{
     flex-direction: column;
     box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.397);
   }
-  
-  .down-add{
-    width: 50vw;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-  }
-  
-  .down-add h2{
-    color: #5CE1E6;
-  }
-  
+
   #btnFechar{
     display: block;
-    padding: 20px;
+    padding: 12px 25px;
     border-radius: 10vw;
-    margin-bottom: 2vh;
     display: flex;
     text-decoration: none;
     color: rgb(201, 201, 201);
@@ -513,17 +508,50 @@ body{
     font-size: 1.5em;
   }
   
-  .card-add{
-    width: 85%;
+  .down-add{
+    width: 100%;
+    height: 70%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+  }
+  
+  .down-add h2{
+    color: #5CE1E6;
+  }
+  
+  .card-add{
+    width: 90%;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
     padding: 30px 35px;
     background: rgba(0, 0, 0, 0);
     border-radius: 20px;
     box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.39);
   }
+
+  .div{
+    background-color: #15162200;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.bloco{
+  width: 25%;
+  height: 100%;
+  padding-top: 5vh;
+  padding-left: 1vh;
+  padding-right: 1vh;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
   
   .card-add > h1{
     font-size: 1rem;
@@ -536,14 +564,14 @@ body{
   .card-add .btn{
     text-transform: uppercase;
     position: relative;
-    width: 300px;
+    width: 200px;
     height: 80px;
     margin: 20px;
     margin-bottom: 10vh;
   }
   
   .card-add .btn #btnLed{
-    font-size: 20px;
+    font-size: 15px;
     position: absolute;
     top: 0;
     left: 0;
@@ -636,8 +664,6 @@ body{
     border-radius: 30px;
     transition-delay: 0.5s;
   }
-
-/*///////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 
 /*/////////////////////////////////////////////////////////////////////////////////////////////////*/
 

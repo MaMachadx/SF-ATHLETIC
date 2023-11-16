@@ -3,13 +3,11 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  <link rel="icon" type="image/x-icon" href="imagens/1.png">
+  <link rel="icon" type="image/x-icon" href="imagens/transparente.png">
   <link href="css/INI.css" rel="stylesheet" type="text/css" />
-  
-
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
   <title>SF Athletic - Login</title>
-
-
 </head>
 
 <body>
@@ -26,63 +24,63 @@
                 <div class="card-cad">
                     <h1>Preencha os campos e crie sua conta!</h1>
                     <div class="box">
-                        <div>
+                        <form action="">
                             <div class="inputBox">
                                 <label for="nome">Nome completo</label>
-                                <input type="text" name="nome" id="nome" class="InputUser" placeholder="Nome completo" >
+                                <input type="text" name="nome" id="nome" class="InputUser" placeholder="Nome completo" required>
                             </div>
                             <div class="inputBox">
                                 <label for="email">Email</label>
-                                <input type="text" name="email" id="email" class="InputUser" placeholder="Email" >
+                                <input type="text" name="email" id="email" class="InputUser" placeholder="Email" required>
                             </div>
                             <div class="inputBox">
                                 <label for="Senha">Senha</label>
-                                <input type="text" name="senha" id="senha" class="InputUser" placeholder="Senha">
+                                <input type="text" name="senha" id="senha" class="InputUser" placeholder="Senha"required>
                             </div>
                             <div class="inputBox">
                                 <label for="telefone">Telefone</label>
-                                <input type="text" name="telefone" id="telefone" class="InputUser" placeholder="Telefone" >
+                                <input type="text" name="telefone" id="telefone" class="InputUser" placeholder="Telefone" required>
                             </div>
                             <div class="inputBox">
                                 <label for="data_nascimento">Data de nascimento</label>
-                                <input type="date" name="data_nascimento" id="data_nascimento" class="InputUser" >
+                                <input type="date" name="data_nascimento" id="data_nascimento" class="InputUser" required>
                             </div>
 
     
                             <p>Sexo:</p>
-                            <input type="radio" id="feminino" name="genero" value="feminino" >
+                            <input type="radio" id="feminino" name="genero" value="feminino" required>
                             <label for="feminino" class="s">Feminino</label>
-                            <input type="radio" id="masculino" name="genero" value="masculino" >
+                            <input type="radio" id="masculino" name="genero" value="masculino" required>
                             <label for="masculino" class="s">Masculino</label>
-                            <input type="radio" id="outro" name="genero" value="outro" >
+                            <input type="radio" id="outro" name="genero" value="outro" required>
                             <label for="outro"  class="s">Outro</label>
     
                             <p>Tipo de conta:</p>
-                            <input type="radio" id="atleta" name="tipo" value="atleta" >
+                            <input type="radio" id="atleta" name="tipo" value="atleta" required>
                             <label for="atleta" class="s">Atleta</label>
-                            <input type="radio" id="olheiro" name="tipo" value="olheiro" >
+                            <input type="radio" id="olheiro" name="tipo" value="olheiro" required>
                             <label for="olheiro" class="s">Olheiro</label>
     
                             <div class="inputBox">
                                 <label for="cidade">Cidade</label>
-                                <input type="text" name="cidade" id="cidade" class="InputUser" placeholder="Cidade" >
+                                <input type="text" name="cidade" id="cidade" class="InputUser" placeholder="Cidade" required>
                             </div>
                             <div class="inputBox">
                                 <label for="estado">Estado</label>
-                                <input type="text" name="estado" id="estado" class="InputUser" placeholder="Estado" >
+                                <input type="text" name="estado" id="estado" class="InputUser" placeholder="Estado" required>
                             </div>
                             <div class="inputBox">
                                 <label for="esporte">Esporte</label>
-                                <input type="text" name="esporte" id="esporte" class="InputUser" placeholder="Esporte" >
+                                <input type="text" name="esporte" id="esporte" class="InputUser" placeholder="Esporte" required>
                             </div>
                             <div class="inputBox">
                                 <label for="esporte">Nome da sua equipe/time</label>
-                                <input type="text" name="t-esporte" id="t-esporte" class="InputUser" placeholder="Esporte" >
+                                <input type="text" name="esporte" id="esporte" class="InputUser" placeholder="Esporte" required>
                             </div>
                             
-                            <button  id="btn-cadastrar" class="btn-cadastrar" >enviar</button>
+                            <center><input type="submit" name="submit" id="submit" class="btn-cadastrar" href="TelaHome.html"></center>
                             
-                        </div>
+                        </form>
                     </div>
                     <a id="subir" href="#popup">CONFERIR</a>
                 </div>
@@ -121,7 +119,9 @@
 
         <div class="left-login">
             <img src="imagens/transparente.png " class="left-login-image">
+            <hr>
             <h1>SF ATHLETIC</h1>
+            <h2>Seu futuro no espote está aqui!</h2>
         </div>
 
         <div class="right-login">
@@ -187,7 +187,7 @@
             Rafael Ferreira
         </h2>
     </div>
-<script src="js/Telainicio.js"> </script>
+
 </body>
 
 </html>
