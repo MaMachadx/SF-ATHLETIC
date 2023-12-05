@@ -48,9 +48,9 @@ body{
 
 .mh{
     margin-left: 10vw;
-    display: none;
+    display: flex;
     width: 35vw;
-    padding-left: 2vw;
+    padding-left: 4vw;
     padding-right: 2vw;
     height: 50px;
     background: #00000000;
@@ -71,6 +71,33 @@ body{
   z-index: 1;
   display: inline-block;
   text-align: center;
+}
+
+#pesquisar{
+  width: 100%;
+  margin-top: 0;
+  border: none;
+  border-radius: 12px;
+  padding: 2.5vh;
+  background: #0f0f0f;
+  color: rgb(255, 255, 255);
+  font-size: 12pt;
+  /*box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.473);*/
+  outline: none;
+  box-sizing: border-box;
+  transition: .5s;
+}
+
+#pesquisar::placeholder{
+  color: #ffffffa4;
+  font-size: 1vw;
+  font-weight: 400;
+}
+
+#pesquisar:hover{
+  border-radius: 15px;
+  padding: 2.5vh;
+  background: #1f1f1f;
 }
 
 .header > img{
@@ -94,10 +121,6 @@ body{
 
 .header > h1:hover{
     color: #ffffff;
-}
-
-.header:hover > .mh{
-    display: flex;
 }
 
 /*/////////////////////////////////////////////////////////////////////////////////////////////////////////*/
@@ -290,7 +313,7 @@ body{
   }
 
   .bx{
-    padding: 3vh;
+    padding: 6vh;
     width: 100%;
   }
 
@@ -301,6 +324,7 @@ body{
     height: 20vh;
     background: linear-gradient(to right, #00B6BD, #00B6BD, #5CE1E6);
     border-radius: 15px;
+    border-top-right-radius: 0px;
     margin-bottom: 6vh;
     display: flex;
     justify-content: center;
@@ -319,44 +343,31 @@ body{
 
   #banner h1{
     margin-left: -10vw;
-    font-size: 2em;
+    font-size: 1.5em;
     color: white;
     transition: .5s;
   }
 
   #banner:hover h1{
-    font-size: 2.1em;
+    font-size: 1.7em;
   }
 
   #psq{
     width: 32vw;
   }
 
-  #pesquisar{
-    width: 100%;
-    margin-top: 0;
-    border: 2px solid #474747;
-    border-radius: 8px;
-    padding: 2.5vh;
-    background: #0f0f0f;
-    color: rgb(255, 255, 255);
-    font-size: 12pt;
-    /*box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.473);*/
-    outline: none;
-    box-sizing: border-box;
-    transition: .5s;
-  }
-  
-  #pesquisar::placeholder{
-    color: #ffffffa4;
-    font-size: 1vw;
-    font-weight: 400;
+  .pesq{
+    font-size: 20px;
+    text-decoration-line: none;
+    background: white;
+    padding: 20px 30px;
+    border-radius: 20PX;
+    color: #00B6BD;
+    transition: .3s
   }
 
-  #pesquisar:hover{
-    border-radius: 15px;
-    padding: 2.5vh;
-    background: #1f1f1f;
+  .pesq:hover{
+    letter-spacing:  1.5px;
   }
 
   /*
@@ -416,13 +427,17 @@ body{
 
 #adicionar h1{
     margin-left: -10vw;
-    font-size: 2em;
+    font-size: 1.5em;
     color: white;
     transition: .5s;
 }
 
+#adicionar:hover h1{
+  font-size: 1.7em;
+}
+
 #adicionar:hover img{
-  height: 40vh;
+  height: 30vh;
 }
 
 #adicionar:hover #add{
@@ -666,162 +681,4 @@ body{
   }
 
 /*/////////////////////////////////////////////////////////////////////////////////////////////////*/
-
-/*#popup{
-  display: none;
-  position: absolute;
-  z-index: 2;
-  background-color: #0000006c;
-  height: 245vh;
-  width: 98.7vw;
-  justify-content: center;
-  align-items: center;
-  backdrop-filter: blur(15px);
-}
-
-.main-cad{
-  width: 60vw;
-  height: 230vh;
-  border-radius: 12px;
-  background-image: linear-gradient(to bottom right, #000000, rgb(44, 44, 44));
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.397);
-}
-
-.down-cad{
-  width: 50vw;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
-.down-cad h2{
-  color: #8d55ff;
-}
-
-#btnFechar{
-  display: block;
-  width: 4vw;
-  height: 4vw;
-  border-radius: 10vw;
-  margin-bottom: 2vh;
-  display: flex;
-  text-decoration: none;
-  color: rgb(201, 201, 201);
-  transition: .3s;
-}
-
-#btnFechar:hover{
-  background-color: #313131;
-  color: rgb(255, 255, 255);
-}
-
-#btnFechar .icon{
-  position: relative;
-  display: block;
-  min-width: 60px;
-  line-height: 70px;
-  text-align: center;
-}
-
-#btnFechar .icon ion-icon{
-  position: relative;
-  font-size: 1.5em;
-}
-
-.card-cad{
-  width: 85%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  padding: 30px 35px;
-  background: rgb(17, 17, 17);
-  border-radius: 20px;
-  box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.527);
-}
-
-.card-cad > h1{
-  font-size: 1rem;
-  color: #ffffff;
-  font-weight: 1000;
-  margin: 0;
-  margin-bottom: 3vh;
-}
-
-.box{
-  background-color: rgba(240, 255, 255, 0);
-}
-
-.inputBox{
-  position: relative;
-  flex-direction: column;
-}
-
-.inputBox > label{
-  font-size: 2vh;
-  font-weight: 800;
-  color: #5CE1E6;
-}
-
-.inputBox > input{
-  width: 100%;
-  margin-bottom: 3vh;
-  margin-top: 1vh;
-  border: none;
-  border-radius: 10px;
-  padding: 15px;
-  background: rgb(44, 44, 44);
-  color: #5ce1e644;
-  font-size: 12pt;
-  outline: none;
-  box-sizing: border-box;
-}
-
-.inputBox > input::placeholder{
-  color: #5ce1e644;
-  font-weight: 700;
-}
-
-.box p{
-  font-size: 2vh;
-  font-weight: 800;
-  color: #5CE1E6;
-}
-
-.box input{
-  margin-bottom: 3vh;
-}
-
-.box .s{
-  color: #b6b6b6;
-  margin-bottom: 3vh;
-  font-weight: 700;
-}
-
-#subir{
-  font-size: 15px;
-  display: block;
-  padding: 10px;
-  border-radius: 10vw;
-  margin-bottom: 2vh;
-  display: flex;
-  text-decoration: none;
-  color: rgb(201, 201, 201);
-  text-align: center;
-  transition: .3s;
-}
-
-#subir:hover{
-  background-color: #313131;
-  color: rgb(255, 255, 255);
-}
-*/
-
-/*///////////////////////////////////////////////////////////////////////////////////////////////////*/
-
+ 

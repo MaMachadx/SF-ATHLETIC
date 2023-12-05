@@ -11,11 +11,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,500&display=swap');
 
 body{
+  min-height: 100vh;
+  display: flex;
   background-color: #0f0f0f;
   font-family: 'Poppins', sans-serif;
   margin: 0;
 }
 
+::-webkit-scrollbar{
+  display: none;
+}
+
+/*
 ::-webkit-scrollbar{
   width: 12px;
 }
@@ -27,7 +34,7 @@ body{
 ::-webkit-scrollbar-thumb{
   background: #8f8f8f;
   border-radius: 1vw;
-}
+}*/
 
 /*//////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 
@@ -58,6 +65,33 @@ body{
     font-size: 0;
     box-shadow: 0 2px 3px 0 rgba(0,0,0,.1);
     transition: .7s;
+}
+
+#pesquisar{
+  width: 100%;
+  margin-top: 0;
+  border: none;
+  border-radius: 12px;
+  padding: 2.5vh;
+  background: #0f0f0f;
+  color: rgb(255, 255, 255);
+  font-size: 12pt;
+  /*box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.473);*/
+  outline: none;
+  box-sizing: border-box;
+  transition: .5s;
+}
+
+#pesquisar::placeholder{
+  color: #ffffffa4;
+  font-size: 1vw;
+  font-weight: 400;
+}
+
+#pesquisar:hover{
+  border-radius: 15px;
+  padding: 2.5vh;
+  background: #1f1f1f;
 }
 
 .mh a{
@@ -110,7 +144,7 @@ body{
 
 .MENU{
   margin-top: 9vh;
-  display: inline;
+  display: flex;
   width: 15vw;
   height: 100%;
   padding-bottom: 15vh;
@@ -260,9 +294,10 @@ body{
     height: 100%;
     width: 75vw;
     border-radius: 10px;
-    display: inline;
+    display: flex;
   }
 
+  
   .conteudo{
     background-color: #1f1f1f00;
     border-radius: 5vh;
@@ -271,63 +306,113 @@ body{
   }
 
   .ctn h2{
-    color: #888888;
     font-size: 1.5vw;
   }
 
-  .bx{
-    width: 50%;
-    padding-top: 2vh;
-    padding-bottom: 2vh;
-    margin-top: 2vh;
-    margin-bottom: 4vh;
-    background-color: #1f1f1f;
-    border-radius: 15px;
-    color: #ffffff;
-    display: flex;
-    align-items: center;
-
-  }
-
-  .b1{
-    margin-left: 0px;
-    height: 100%;
-    width: 100px;
-    padding-left: 30px;
-  }
-
-  .b1 img{
-    width: 80px;
-  }
-
-  .b2{
-    height: 100%;
-    width: 25%;
-    padding-left: 10px;
-  }
-
-  .b2 h1{
-    font-size: 30px;
-  }
-
-  .b2 h2{
-    font-size: 15px;
-  }
-
-  .bx a{
-    padding: 20px;
-    margin-left: 40px;
-    border-radius: 20px;
-    text-decoration-line: none;
-    font-size: 15px;
-    color: rgb(201, 201, 201);
-    transition: .5s;
-  }
-
-  .bx a:hover{
-    background: #a3a3a3;
-    color: #fff;
-    letter-spacing: 1px;
-  }
-
 /*///////////////////////////////////////////////////////////////////////////////////*/
+
+.slide-conteiner{
+  max-width: 1000px;
+  width: 100%;
+  background-color: rgba(128, 128, 128, 0.075);
+  padding: 30px 0;
+  border-radius: 25px
+}
+
+.slide-content{
+  display: flex;
+  justify-content: center;
+}
+
+.card{
+  width: 320px;
+  background-color: #3d3d3d;
+  border-radius: 25px;
+  box-shadow: 0 0 2px #5CE1E6,
+    0 0 5px #5CE1E6,
+    0 0 10px #5CE1E6,
+    0 0 25px #5CE1E6;
+}
+
+.image-content,
+.card-content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 14px;
+}
+.image-content{
+  position: relative;
+  row-gap: 5px;
+  padding: 25px 0;
+}
+
+.overlay{
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(to bottom right,#5CE1E6, #5d0dff);
+  border-radius: 25px 25px 0 25px;
+}
+
+.overlay::before,
+.overlay::after{
+  content: '';
+  position: absolute;
+  right: 0;
+  bottom: -40px;
+  height: 40px;
+  width: 40px;
+  background-color: #5d0dff;
+}
+
+.overlay::after{
+  border-radius: 0 25px 0 0;
+  background-color: #3d3d3d;
+}
+
+.card-image{
+  position: relative;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  background: rgb(255, 255, 255);
+  padding: 3px;
+}
+
+ .card-image .card-img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+ }
+
+.name{
+  font-size: 18px;
+  font-weight: 500;
+  color: #fff;
+}
+
+.description{
+  font-size: 14px;
+  color: #e6e6e6;
+  text-align: center;
+}
+
+.button{
+  text-decoration-line: none;
+  font-size: 16px;
+  color: #fff;
+  padding: 8px 16px;
+  background-color: #5d0dff;
+  border-radius: 6px;
+  margin: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.button:hover{
+  background-color: #6f27ff;
+}
