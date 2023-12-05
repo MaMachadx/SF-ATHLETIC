@@ -31,31 +31,30 @@
           </a>
         </li>
   
-        <li class="lista active">
+        <li class="lista">
           <a href="TelaPerfil.html">
-              <span class="icon"><ion-icon name="person-sharp"></ion-icon></span>
+            <span class="icon"><ion-icon name="person-outline"></ion-icon></span>
             <span class="title">Perfil</span>
           </a>
         </li>
   
-        <li class="lista">
-          <a href="#">
-            <span class="icon"><ion-icon name="help-circle-outline"></ion-icon></span>
-            <span class="title">Ajuda</span>
+        <li class="lista active">
+          <a href="TelaExplorar.html">
+            <span class="icon"><ion-icon name="search-sharp"></ion-icon></span>
+            <span class="title">Explorar</span>
           </a>
         </li>
   
         <li class="lista">
-            <a href="TelaInicio.html">
-              <form method="post">
-                <input type="submit" class="logout" value="Logout" name="btnLogout">
-              </form>
-              <!--<span class="icon"><ion-icon name="enter-outline"></ion-icon></span>
-              <span class="title">Logout</span>-->
-            </a>
-          </li>
+          <a href="TelaInicio.html">
+            <form method="post">
+              <input type="submit" class="logout" value="Logout" name="btnLogout">
+            </form>
+            <!--<span class="icon"><ion-icon name="enter-outline"></ion-icon></span>
+            <span class="title">Logout</span>-->
+          </a>
+        </li>
       </ul>
-  
     </div>
   
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
@@ -81,19 +80,34 @@
   <div class="ctn">
     <div id="initial">
         <div id="capa">
-            <img id="ftpf" src="imagens/user2.png">
+            <img id="ftpf" src="imagens/duda1.jpg">
           </div>
 
-        <h1 id="nome">Usuário</h1>
-        <h2 id="ie"></h2>
+        <h1 id="nome">Maria Eduarda</h1>
+        <h2 id="ie">Handebol | 17 anos</h2>
+        <h2 id="ie">TIETÊ</h2>
         <div id="he">
-            <a href="#bio">biografia</a>
-            <a href="#info">informações</a>
-            <a href="#fts">Fotos</a>
+          <a href="#fts">Fotos</a>
+          <a href="#bio">biografia</a>
+          <a href="#info">informações</a>
         </div>
     </div>
 
     <hr>
+
+    <div class="cx">
+      <div class="card">
+        <div class="content" id="fts">
+          <div class="ftBox"><img src="imagens/duda2.jpg"></div>
+        </div>
+        <div class="content" id="fts">
+          <div class="ftBox"><img src="imagens/duda3.jpg"></div>
+        </div>
+        <div class="content" id="fts">
+          <div class="ftBox"><img src="imagens/duda4.jpg"></div>
+        </div>
+      </div>
+    </div> 
     
     <div class="cx">
       <div class="card">
@@ -109,14 +123,6 @@
         <div class="content" id="bio">
             <h1 id="title">informações</h1>
             <p>Este Usuário não possui nenhum dado</p>
-        </div>
-      </div>
-    </div> 
-
-    <div class="cx">
-      <div class="card">
-        <div class="content" id="fts">
-          <p>Este Usuário não possui nenhuma foto</p>
         </div>
       </div>
     </div> 

@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width">
   <link rel="icon" type="image/x-icon" href="imagens/transparente.png">
   <title>Pesquisar</title>
+  <link rel="stylesheet" href="css/swiper-bundle.min.css">
   <link href="css/EXPLORAR.css" rel="stylesheet" type="text/css" />
 </head>
 
@@ -15,7 +16,7 @@
         <img src="imagens/1.png">
         <h1>sf athletic</h1>
         <div class="mh">
-          <input type="text" name="pesquisar" id="pesquisar" class="InputUser" placeholder="Pesquisar" required>
+          <input type="text" name="pesquisar" id="pesquisar" class="InputUser" placeholder="Pesquisar" onclick="pesquisa('user')">
         </div>
     </div>
 
@@ -76,55 +77,41 @@
       </script>
     </div>
 
-<!--------------------------------------------------------------------------------------------------------------------------------------------->
+    <!--------------------------------------------------------------------------------------------------------------------------------------------->
 
     <div class="ctn">
-      <div class="conteudo">
+      <div class="slide-conteiner swiper">
+          <div class="slide-content swiper-wrapper">
+              <div class="card-wrapper">
+                  <div class="card swiper-slide">
+                      <div class="image-content">
+                          <span class="overlay"></span>
 
-        <h2>Resultados:</h2>
+                          <div class="card-image">
+                              <img src="imagens/duda1.jpg" class="card-img">
+                          </div>
+                      </div>
 
-        <div class="bx">
-          
-        </div>
+                      <div class="card-content">
+                          <h2 class="name">Maria Eduarda</h2>
+                          <p class="description">Handebol | 17 anos</p>
 
-        <div class="bx">
-          <div class="b1">
-            <img id="ftpf" src="imagens/user2.png">
+                          <a class="button" href="TelaUsuario.html">Ver perfil</a>
+                      </div>
+                  </div>
+              </div>
           </div>
-          <div class="b2">
-            <h1>Nome</h1>
-            <h2>Esporte | Idade</h2>
-          </div>
-          <a href="TelaPerfil.html">Visitar perfil</a>
-        </div>
-
-        <div class="bx">
-          <div class="b1">
-            <img id="ftpf" src="imagens/user2.png">
-          </div>
-          <div class="b2">
-            <h1>Nome</h1>
-            <h2>Esporte | Idade</h2>
-          </div>
-          <a href="TelaPerfil.html">Visitar perfil</a>
-        </div>
-
-        <div class="bx">
-          <div class="b1">
-            <img id="ftpf" src="imagens/user2.png">
-          </div>
-          <div class="b2">
-            <h1>Nome</h1>
-            <h2>Esporte | Idade</h2>
-          </div>
-          <a href="TelaPerfil.html">Visitar perfil</a>
-        </div>
-
+          <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
       </div>
-    </div>
+  </div>
 
   </div>
 
 </body>
+
+<script src="js/swiper-bundle.min.js"></script>
+<script src="js/script.js"></script>
 
 </html>
